@@ -1,5 +1,10 @@
 const Hero = () => {
-  return <div>Hero</div>;
+  return <article>
+    {/* background image */}
+    <section></section>
+    <section></section>
+    <section></section>
+  </article>;
 };
 
 export default Hero;

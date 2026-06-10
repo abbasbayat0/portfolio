@@ -15,12 +15,12 @@ const navLinks = [
 const Navbar = () => {
   const [isMobileNavOpen, setMobileNavStatus] = useState(false);
   return (
-    <div className="sticky top-0 right-0 left-0 flex w-full items-center justify-between bg-transparent">
+    <div className="sticky top-0 right-0 left-0 flex w-full items-center justify-between bg-transparent z-20">
       {/* logo */}
       <section>
         <a
           href="/"
-          className="font-[<Inter>] text-2xl font-semibold tracking-[-2px] transition duration-300 hover:text-[#20b2a6]"
+          className="font-[<Inter>] text-2xl font-semibold tracking-[-1px] text-white transition duration-300 hover:text-[#20b2a6]"
         >
           AB<span className="text-[#20b2a6]">.</span>
         </a>
