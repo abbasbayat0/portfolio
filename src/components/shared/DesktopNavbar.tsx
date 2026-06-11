@@ -1,0 +1,31 @@
+import Button from "../ui/Button";
+
+const DesktopNavbar = ({
+  navLinks,
+}: {
+  navLinks: { href: string; label: string }[];
+}) => {
+  console.log(navLinks);
+  return (
+    <>
+      <section className="hidden gap-4 rounded-full border-[#1a2329]/90 bg-[#1a2329]/80 px-4 py-2 shadow-lg/20 shadow-[#1a2329] backdrop-blur-lg md:flex">
+        {navLinks.map((link) => {
+          return (
+            <a
+              href={link.href}
+              key={link.label}
+              className="font-inter flex items-center justify-center rounded-full px-3 py-1 text-sm tracking-wide text-gray-300/60 transition duration-300 hover:bg-[#1a2329]/20 hover:text-gray-300"
+            >
+              {link.label}
+            </a>
+          );
+        })}
+      </section>
+      <section className="hidden md:block">
+        <Button children="Contact Me" />
+      </section>
+    </>
+  );
+};
+
+export default DesktopNavbar;

@@ -1,0 +1,55 @@
+import { AnimatePresence, motion } from "motion/react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import Button from "../ui/Button";
+
+const MobileNavbar = ({
+  navLinks,
+}: {
+  navLinks: { href: string; label: string }[];
+}) => {
+  const [isMobileNavOpen, setMobileNavStatus] = useState(false);
+  return (
+    <>
+      <AnimatePresence>
+        {isMobileNavOpen ? (
+          <motion.section
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+              transition: { duration: 1 },
+            }}
+            exit={{ height: 0, opacity: 0, transition: { duration: 1 } }}
+            className="absolute top-10 w-full overflow-hidden rounded-md bg-gray-500/90 px-10 pt-1 pb-5 backdrop-blur-[2px] transition duration-300 md:hidden"
+          >
+            <div>
+              {navLinks.map((link) => {
+                return (
+                  <a
+                    href={link.href}
+                    key={link.label}
+                    className="font-inter mt-3 flex justify-center rounded-full py-1 tracking-wide text-white/70"
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
+            </div>
+            <Button children="Contact Me" className="mt-5 w-full" size="lg" />
+          </motion.section>
+        ) : null}
+      </AnimatePresence>
+      <section
+        className="cursor-pointer md:hidden"
+        onClick={() => {
+          setMobileNavStatus(!isMobileNavOpen);
+        }}
+      >
+        {isMobileNavOpen ? <X /> : <Menu />}
+      </section>
+    </>
+  );
+};
+
+export default MobileNavbar;
