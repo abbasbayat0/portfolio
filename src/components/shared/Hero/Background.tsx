@@ -13,13 +13,13 @@ const Background = () => {
       </div>
 
       {/* background shadow */}
-      <div className="absolute min-h-screen min-w-screen bg-linear-to-b from-20% to-[#0f1418] to-80%"></div>
+      <div className="absolute min-h-[120%] min-w-screen bg-linear-to-b from-20% to-[#0f1418] to-80%"></div>
 
       {/* green dots */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(30)].map(() => (
           <div
-            className="absolute h-1 w-1 rounded-full bg-[#20b2a6] opacity-70"
+            className="absolute h-1.5 w-1.5 rounded-full bg-[#20b2a6] opacity-70"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,

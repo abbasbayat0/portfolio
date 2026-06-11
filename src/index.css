@@ -20,3 +20,8 @@
     transform: translate(80px, -50px);
   }
 }
+
+.georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}

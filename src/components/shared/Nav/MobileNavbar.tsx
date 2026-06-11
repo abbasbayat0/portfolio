@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const MobileNavbar = ({
   navLinks,
@@ -21,7 +21,7 @@ const MobileNavbar = ({
               transition: { duration: 1 },
             }}
             exit={{ height: 0, opacity: 0, transition: { duration: 1 } }}
-            className="absolute top-10 w-full overflow-hidden rounded-md bg-gray-500/90 px-10 pt-1 pb-5 backdrop-blur-[2px] transition duration-300 md:hidden"
+            className="absolute top-10 w-full overflow-hidden rounded-xl bg-[#172026]/80 px-10 pt-1 pb-5 backdrop-blur-[10px] transition duration-300 md:hidden"
           >
             <div>
               {navLinks.map((link) => {
@@ -46,7 +46,7 @@ const MobileNavbar = ({
           setMobileNavStatus(!isMobileNavOpen);
         }}
       >
-        {isMobileNavOpen ? <X /> : <Menu />}
+        {isMobileNavOpen ? <X color="white" /> : <Menu color="white" />}
       </section>
     </>
   );

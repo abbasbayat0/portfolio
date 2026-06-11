@@ -1,11 +1,10 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const DesktopNavbar = ({
   navLinks,
 }: {
   navLinks: { href: string; label: string }[];
 }) => {
-  console.log(navLinks);
   return (
     <>
       <section className="hidden gap-4 rounded-full border-[#1a2329]/90 bg-[#1a2329]/80 px-4 py-2 shadow-lg/20 shadow-[#1a2329] backdrop-blur-lg md:flex">

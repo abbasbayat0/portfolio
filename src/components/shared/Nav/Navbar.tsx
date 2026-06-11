@@ -1,4 +1,4 @@
-import Logo from "../ui/Logo";
+import Logo from "./Logo";
 import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 
@@ -11,7 +11,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 right-0 left-0 z-20 flex w-full items-center justify-between bg-transparent">
+    <div className="fixed left-1/2 -translate-x-1/2 z-20 flex w-11/12 items-center justify-between bg-gray-700/20 backdrop-blur-[2px] py-2 px-5 rounded-full">
       <Logo />
       <MobileNavbar navLinks={navLinks} />
       <DesktopNavbar navLinks={navLinks} />
