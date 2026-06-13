@@ -17,7 +17,7 @@ const App = () => {
       <header className="w-screen max-w-350 overflow-x-hidden px-14 py-5">
         <Navbar />
       </header>
-      <main className="absolute w-screen max-w-350 overflow-x-hidden px-14 py-5">
+      <main className="absolute left-1/2 w-screen max-w-350 -translate-x-1/2 overflow-x-hidden overflow-y-hidden px-14 py-5">
         <Hero />
         <About />
         <Projects />
