@@ -67,9 +67,17 @@ const Hero = () => {
       </section>
 
       {/* right side */}
-      <section className="flex max-w-1/2 min-w-1/2 items-center justify-center">
-          <img src="/main.png" alt="" className="w-8/12 rounded-xl border-8 border-[#1a2329]/50 shadow-[#20b2a6] shadow-xl" />
-        
+      <section className="relative flex max-w-1/2 min-w-1/2 items-center justify-center">
+        <div className="w-9/12">
+          <img
+            src="/main.png"
+            alt=""
+            className="rounded-xl border-5 border-[#1a2329]/30"
+          />
+        </div>
+        <div className="absolute w-9/12 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] shadow-[#20b2a6]/30">
+          <img src="/main.png" alt="" className="opacity-0" />
+        </div>
       </section>
     </article>
   );
