@@ -7,13 +7,13 @@ const DesktopNavbar = ({
 }) => {
   return (
     <>
-      <section className="hidden gap-4 rounded-full border-[#1a2329]/90 bg-[#1a2329]/80 px-4 py-2 shadow-lg/20 shadow-[#1a2329] backdrop-blur-lg md:flex">
+      <section className="hidden gap-4 rounded-full px-4 py-2 md:flex">
         {navLinks.map((link) => {
           return (
             <a
               href={link.href}
               key={link.label}
-              className="font-inter flex items-center justify-center rounded-full px-3 py-1 text-sm tracking-wide text-gray-300/60 transition duration-300 hover:bg-[#1a2329]/20 hover:text-gray-300"
+              className="font-inter flex items-center justify-center rounded-full px-3 py-1 text-sm tracking-wide text-gray-300/60 transition duration-300 hover:bg-[#1a2329]/40 hover:text-gray-300"
             >
               {link.label}
             </a>

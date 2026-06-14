@@ -1,10 +1,10 @@
 const Image = () => {
   return (
-    <section className="relative mt-20 flex items-center justify-end min-[900px]:-mb-20 md:-mt-44 md:max-w-1/2 md:min-w-1/2 lg:-mb-44">
-      <div className="relative max-w-113 min-[500px]:w-10/12 min-[870px]:w-11/12 md:w-full">
+    <section className="relative mt-20 flex items-center justify-center md:justify-end min-[900px]:-mb-20 md:-mt-44 md:max-w-1/2 md:min-w-1/2 lg:-mb-44">
+      <div className="relative max-w-113 min-[870px]:w-11/12 md:w-full">
         <img
           src="/main.png"
-          alt=""
+          alt="abbas bayat true picture"
           className="rounded-xl border-5 border-[#1a2329]/30"
         />
 
@@ -26,7 +26,7 @@ const Image = () => {
       </div>
 
       {/* animation */}
-      <div className="absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] shadow-[#20b2a6]/30 min-[500px]:w-10/12 min-[870px]:w-11/12 md:w-full">
+      <div className="absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] shadow-[#20b2a6]/30 min-[870px]:w-11/12 md:w-full">
         <img src="/main.png" alt="" className="opacity-0" />
       </div>
     </section>
