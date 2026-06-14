@@ -21,7 +21,7 @@ const MobileNavbar = ({
               transition: { duration: 1 },
             }}
             exit={{ height: 0, opacity: 0, transition: { duration: 1 } }}
-            className="absolute top-10 w-full overflow-hidden rounded-xl bg-[#172026]/80 px-10 pt-1 pb-5 backdrop-blur-[10px] transition duration-300 md:hidden"
+            className="absolute top-14 left-1/2 -translate-x-1/2 w-full overflow-hidden rounded-xl bg-[#172026]/90 px-10 pt-1 pb-5 transition duration-300 md:hidden"
           >
             <div>
               {navLinks.map((link) => {
