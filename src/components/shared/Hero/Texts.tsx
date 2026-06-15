@@ -7,14 +7,14 @@ const Texts = () => {
       {/* badge of frontend */}
       <div className="relative mt-5 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px]">
         <div className="absolute top-3.5 left-3 h-2 w-2 animate-pulse rounded-full bg-[#1FABA0]"></div>
-        <p className="ml-3 font-inter text-sm text-[#1faba0]">
+        <p className="font-inter ml-3 text-sm text-[#1faba0]">
           Front-End Developer . Next.JS Specialist
         </p>
       </div>
 
       {/* main text */}
       <div className="mt-8">
-        <p className="-ml-5 font-inter text-6xl leading-20 font-bold text-white md:ml-0 md:text-7xl">
+        <p className="font-inter -ml-5 text-6xl leading-20 font-bold text-white md:ml-0 md:text-7xl">
           Clean{" "}
           <span className="text-[#20B2A6] text-shadow-lg/50 text-shadow-[#20b2a6]">
             Code
@@ -44,7 +44,7 @@ const Texts = () => {
         </Button>
 
         {/* CV */}
-        <Button className="group flex w-50 items-center justify-center border border-[#20b2a6]/20 bg-transparent py-3 text-lg text-white transition duration-300 hover:border-[#20b2a6]/50 hover:bg-[#20b2a6]/20 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:text-bas lg:px-6 lg:py-4 lg:font-bold">
+        <Button className="group flex w-50 items-center justify-center border border-[#20b2a6]/20 bg-transparent py-3 text-lg text-white transition duration-300 hover:border-[#20b2a6]/50 hover:bg-[#20b2a6]/20 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-bold">
           <a href="/ABBAS.pdf" className="flex gap-2" download>
             <p>Download CV </p>
             <ArrowDownToLine className="group-hover:animate-bounce md:-mt-0.5" />
