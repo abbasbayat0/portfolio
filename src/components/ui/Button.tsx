@@ -21,7 +21,7 @@ const Button = ({
   };
   const combinedClass = cn(
     SIZE_MAP[size],
-    "bg-[#20b2a6]/80 rounded-full text-sm font-inter text-white/80 cursor-pointer hover:bg-[#20b2a6] transition duration-300 hover:text-white",
+    "bg-[#20b2a6]/80 rounded-full text-sm font-inter text-white/80 font-inter cursor-pointer hover:bg-[#20b2a6] transition duration-300 hover:text-white",
     className,
   );
 

@@ -37,10 +37,11 @@
 }
 
 @keyframes tech {
-  0%, 100%{
+  0%,
+  100% {
     transform: translateX(200px);
   }
-  50%{
+  50% {
     transform: translateX(-4800px);
   }
 }
