@@ -11,7 +11,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <article className="fixed left-1/2 -translate-x-1/2 z-20 flex w-11/12 items-center max-w-340 justify-between bg-gray-700/20 backdrop-blur-[3px] py-2 px-5 rounded-full">
+    <article className="fixed left-1/2 -translate-x-1/2 z-20 flex w-11/12 items-center max-w-340 justify-between bg-gray-700/20 backdrop-blur-[6px] py-2 px-5 rounded-full">
       <Logo />
       <MobileNavbar navLinks={navLinks} />
       <DesktopNavbar navLinks={navLinks} />

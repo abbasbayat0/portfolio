@@ -2,7 +2,7 @@ const LeftSide = () => {
   return (
     <div className="sm:w-11/12 lg:w-1/2">
       <div>
-        <p className="font-inter text-4xl font-bold text-[#20B2A6] md:text-5xl">
+        <p className="font-inter font-bold text-[#20B2A6] text-5xl">
           Building the future,{" "}
           <span className="georgia leading-16 text-white italic">
             one component at a time.
