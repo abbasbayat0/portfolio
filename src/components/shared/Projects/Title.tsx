@@ -2,7 +2,7 @@ const Title = () => {
   return (
     <section className="flex flex-col items-center">
       <p className="font-inter text-sm text-[#20B2A6]">FEATURED WORKS</p>
-      <p className="font-inter mt-5 text-5xl font-bold text-[#20B2A6]">
+      <p className="font-inter mt-5 text-5xl font-bold text-center text-[#20B2A6]">
         Projects that{" "}
         <span className="georgia text-white italic">make an impact.</span>
       </p>
