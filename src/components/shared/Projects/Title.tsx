@@ -6,7 +6,7 @@ const Title = () => {
         Projects that{" "}
         <span className="georgia text-white italic">make an impact.</span>
       </p>
-      <p className="font-inter mt-5 w-11/12 text-center text-white/40">
+      <p className="font-inter mt-5 w-11/12 text-center text-white/50">
         A selection of my recent work, from complex web applications to
         innovative tools that solve real-world problems.
       </p>
