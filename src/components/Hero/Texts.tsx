@@ -5,7 +5,7 @@ const Texts = () => {
   return (
     <section className="md:max-w-1/2 md:min-w-1/2">
       {/* badge of frontend */}
-      <div className="relative mt-5 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px]">
+      <div className="relative -ml-2 md:ml-0 mt-5 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px]">
         <div className="absolute top-3.5 left-3 h-2 w-2 animate-pulse rounded-full bg-[#1FABA0]"></div>
         <p className="font-inter ml-3 text-sm text-[#1faba0]">
           Front-End Developer . Next.JS Specialist
@@ -14,7 +14,7 @@ const Texts = () => {
 
       {/* main text */}
       <div className="mt-8 p-2 md:p-0">
-        <p className="font-inter -ml-5 text-5xl leading-20 font-bold text-white md:ml-0 md:text-7xl">
+        <p className="font-inter -ml-5 text-5xl leading-14 md:leading-20 font-bold text-white md:ml-0 md:text-7xl">
           Clean{" "}
           <span className="text-[#20B2A6] text-shadow-lg/50 text-shadow-[#20b2a6]">
             Code
@@ -25,7 +25,7 @@ const Texts = () => {
       </div>
 
       {/* description */}
-      <div className="mt-8 md:w-9/12">
+      <div className="mt-5 md:mt-8 md:w-9/12">
         <p className="font-sans text-lg font-semibold text-[#7a8491]">
           Hi, I'm Abbas Bayat - a front-end developer specializing in Next.JS,
           React.JS, and TypeScript. I build scalable, performant web
@@ -34,7 +34,7 @@ const Texts = () => {
       </div>
 
       {/* buttons */}
-      <div className="mt-8 flex flex-col gap-4 min-[500px]:flex-row md:gap-2">
+      <div className="mt-8 flex -ml-1 flex-col gap-4 min-[500px]:flex-row md:gap-2">
         {/* contact */}
         <Button className="flex w-50 items-center justify-center py-3 text-lg text-white/80 hover:text-white min-[850px]:w-40 md:text-[14px] lg:text-base lg:font-semibold">
           <div className="flex gap-2">
