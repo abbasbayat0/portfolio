@@ -1,5 +1,5 @@
-import Background from "./components/shared/Hero/Background";
-import Navbar from "./components/shared/Nav/Navbar";
+import Background from "./components/Hero/Background";
+import Navbar from "./components/Nav/Navbar";
 import About from "./page/home/About";
 import Comments from "./page/home/Comments";
 import Contact from "./page/home/Contact";

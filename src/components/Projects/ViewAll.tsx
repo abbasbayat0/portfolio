@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import Button from "../../ui/Button";
+import Button from "../Button";
 
 const ViewAll = () => {
   return (

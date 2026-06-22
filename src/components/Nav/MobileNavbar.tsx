@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Button from "../../ui/Button";
+import Button from "../Button";
 
 const MobileNavbar = ({
   navLinks,
@@ -21,7 +21,7 @@ const MobileNavbar = ({
               transition: { duration: 1 },
             }}
             exit={{ height: 0, opacity: 0, transition: { duration: 1 } }}
-            className="absolute top-14 left-1/2 -translate-x-1/2 w-full overflow-hidden rounded-xl bg-[#172026]/90 px-10 pt-1 pb-5 transition duration-300 md:hidden"
+            className="absolute top-14 left-1/2 w-full -translate-x-1/2 overflow-hidden rounded-xl bg-[#172026]/90 px-10 pt-1 pb-5 transition duration-300 md:hidden"
           >
             <div>
               {navLinks.map((link) => {

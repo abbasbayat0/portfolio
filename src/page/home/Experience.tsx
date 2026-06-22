@@ -1,5 +1,5 @@
-import AllExperience from "../../components/shared/Experience/AllExperience";
-import Title from "../../components/shared/Experience/Title";
+import AllExperience from "../../components/Experience/AllExperience";
+import Title from "../../components/Experience/Title";
 
 const Experience = () => {
   return (

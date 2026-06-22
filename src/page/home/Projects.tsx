@@ -1,6 +1,6 @@
-import Title from "../../components/shared/Projects/Title";
-import ProjectCart from "../../components/shared/Projects/ProjectCart";
-import ViewAll from "../../components/shared/Projects/ViewAll";
+import Title from "../../components/Projects/Title";
+import ProjectCart from "../../components/Projects/ProjectCart";
+import ViewAll from "../../components/Projects/ViewAll";
 
 const Projects = () => {
   return (
