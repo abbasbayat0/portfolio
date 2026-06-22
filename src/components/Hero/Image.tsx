@@ -9,7 +9,7 @@ const Image = () => {
         />
 
         {/* EXP */}
-        <div className="md:py-auto md:px-auto absolute -top-1/12 -left-1/12 flex animate-[ex_3s_ease-in-out_infinite] items-center justify-center rounded-xl border border-[#1a2329] bg-[#1a2329]/50 px-2 py-2 backdrop-blur-xs min-[500px]:-top-8 min-[500px]:-left-5 min-[870px]:top-0 md:-top-10 md:h-20 md:w-24">
+        <div className="md:py-auto md:px-auto absolute -top-1/12 left-0 flex animate-[ex_3s_ease-in-out_infinite] items-center justify-center rounded-xl border border-[#1a2329] bg-[#1a2329]/50 px-2 py-2 backdrop-blur-xs min-[500px]:-top-8 min-[500px]:-left-5 min-[870px]:top-0 md:-top-10 md:h-20 md:w-24">
           <p className="font-inter text-sm font-extralight tracking-wide text-white/60 md:text-xs">
             <span className="text-2xl font-bold text-[#20B2A6] md:text-3xl">
               2+

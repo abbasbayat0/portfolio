@@ -1,14 +1,16 @@
+import Title from "../Title";
+
 const LeftSide = () => {
   return (
     <div className="sm:w-11/12 lg:w-1/2">
-      <div>
-        <p className="font-inter font-bold text-[#20B2A6] text-5xl">
+      <Title title="about me" left>
+        <p className="font-inter font-bold text-[#20B2A6]">
           Building the future,{" "}
           <span className="georgia leading-16 text-white italic">
             one component at a time.
           </span>
         </p>
-      </div>
+      </Title>
       <div className="mt-8">
         <p className="font-inter text-sm font-light tracking-wide text-white/50 md:text-base">
           I'm a passionate software engineer with over 5 years of experience

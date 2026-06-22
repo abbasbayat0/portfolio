@@ -16,6 +16,7 @@ const ListNavigations = ({
 }) => {
   return (
     <div className="flex items-center justify-center gap-5">
+      {/* chevron */}
       <div
         className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-[#20b2a6]/30"
         onClick={() => {
@@ -26,6 +27,7 @@ const ListNavigations = ({
       >
         <ChevronLeft className="text-white" size={25} />
       </div>
+      {/* dots */}
       <div className="flex gap-2">
         {[...Array(comments.length)].map((comment, index) => {
           return (
@@ -39,6 +41,7 @@ const ListNavigations = ({
           );
         })}
       </div>
+      {/* chevron */}
       <div
         className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-[#20b2a6]/30"
         onClick={() => {

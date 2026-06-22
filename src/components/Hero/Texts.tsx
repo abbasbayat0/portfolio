@@ -13,8 +13,8 @@ const Texts = () => {
       </div>
 
       {/* main text */}
-      <div className="mt-8">
-        <p className="font-inter -ml-5 text-6xl leading-20 font-bold text-white md:ml-0 md:text-7xl">
+      <div className="mt-8 p-2 md:p-0">
+        <p className="font-inter -ml-5 text-5xl leading-20 font-bold text-white md:ml-0 md:text-7xl">
           Clean{" "}
           <span className="text-[#20B2A6] text-shadow-lg/50 text-shadow-[#20b2a6]">
             Code
