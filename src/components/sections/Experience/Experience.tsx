@@ -1,5 +1,5 @@
-import AllExperience from "../../components/Experience/AllExperience";
-import Title from "../../components/Title";
+import AllExperience from "../../components/sections/Experience/AllExperience";
+import Title from "../../components/ui/Title";
 
 const Experience = () => {
   return (

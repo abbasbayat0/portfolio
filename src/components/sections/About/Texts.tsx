@@ -1,6 +1,6 @@
 import { CodeXml, Lightbulb, Rocket, UserSearch } from "lucide-react";
 
-const RightSide = () => {
+const Texts = () => {
   return (
     <div className="flex flex-wrap items-center justify-center gap-6 lg:w-1/2 lg:justify-end">
       {/* CLEAN */}
@@ -58,4 +58,4 @@ const RightSide = () => {
   );
 };
 
-export default RightSide;
+export default Texts;

@@ -1,6 +1,6 @@
-import Title from "../Title";
+import Title from "../../ui/Title";
 
-const LeftSide = () => {
+const IconicDesc = () => {
   return (
     <div className="sm:w-11/12 lg:w-1/2">
       <Title title="about me" left>
@@ -41,4 +41,4 @@ const LeftSide = () => {
   );
 };
 
-export default LeftSide;
+export default IconicDesc;

@@ -1,5 +1,5 @@
-import List from "../../components/Comments/List";
-import Title from "../../components/Title";
+import List from "../../components/sections/Comments/List";
+import Title from "../../components/ui/Title";
 
 const Comments = () => {
   return (
