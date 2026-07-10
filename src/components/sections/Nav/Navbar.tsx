@@ -1,6 +1,7 @@
-import Logo from "./Logo";
 import DesktopNavbar from "./DesktopNavbar";
+import Logo from "./Logo";
 import MobileNavbar from "./MobileNavbar";
+
 
 const navLinks = [
   { href: "#about", label: "About" },

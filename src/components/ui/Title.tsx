@@ -23,7 +23,7 @@ const Title = ({
       </p>
       {description && (
         <p
-          className={`font-inter mt-5 w-11/12 text-sm md:text-base text-white/50 ${!left && "text-center"}`}
+          className={`font-inter mt-5 w-11/12 text-sm md:text-base text-white/40 ${!left && "text-center"}`}
         >
           {description}
         </p>

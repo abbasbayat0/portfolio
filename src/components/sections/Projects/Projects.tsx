@@ -1,6 +1,6 @@
-import ProjectCart from "../../components/sections/Projects/ProjectCart";
-import ViewAll from "../../components/sections/Projects/ViewAll";
-import Title from "../../components/ui/Title";
+import Title from "../../ui/Title";
+import ProjectCart from "./ProjectCart";
+import ViewAll from "./ViewAll";
 
 const Projects = () => {
   return (

@@ -1,5 +1,5 @@
-import IconicDesc from "../../components/sections/About/IconicDesc";
-import Texts from "../../components/sections/About/Texts";
+import IconicDesc from "./IconicDesc";
+import Texts from "./Texts";
 
 const About = () => {
   return (

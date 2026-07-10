@@ -1,6 +1,6 @@
-import Image from "../../components/Hero/Image";
-import Technologies from "../../components/Hero/Technologies";
-import Texts from "../../components/Hero/Texts";
+import Image from "./Image";
+import Technologies from "./Technologies";
+import Texts from "./Texts";
 
 const Hero = () => {
   return (
