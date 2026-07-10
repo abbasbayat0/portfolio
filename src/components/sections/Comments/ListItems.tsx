@@ -12,8 +12,8 @@ const ListItems = ({
   photo: string;
 }) => {
   return (
-    <div className="relative w-full rounded-4xl bg-[#151F24] px-2 pt-16 pb-10 shadow-[0_0_8px_8px] shadow-[#20b2a6]/10 sm:w-9/12 md:px-16">
-      <div className="absolute -top-5 left-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#20b2a6]">
+    <div className="relative w-full rounded-4xl bg-[#151F24] px-2 pt-16 pb-10 shadow-[0_0_8px_8px] shadow-green/10 sm:w-9/12 md:px-16">
+      <div className="absolute -top-5 left-10 flex h-12 w-12 items-center justify-center rounded-full bg-green">
         <Quote className="text-white" size={25} />
       </div>
       <div>

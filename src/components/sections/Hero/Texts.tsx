@@ -16,7 +16,7 @@ const Texts = () => {
       <div className="mt-8 p-2 md:p-0">
         <p className="font-inter -ml-5 text-5xl leading-14 font-bold text-white md:ml-0 md:text-7xl md:leading-20">
           Clean{" "}
-          <span className="text-[#20B2A6] text-shadow-lg/50 text-shadow-[#20b2a6]">
+          <span className="text-green text-shadow-lg/50 text-shadow-green">
             Code
           </span>
           <br /> From Beautiful <br />
@@ -44,7 +44,7 @@ const Texts = () => {
         </Button>
 
         {/* CV */}
-        <Button className="group flex w-50 items-center justify-center border border-[#20b2a6]/20 bg-transparent py-3 text-lg text-white transition duration-300 hover:border-[#20b2a6]/50 hover:bg-[#20b2a6]/20 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-bold">
+        <Button className="group flex w-50 items-center justify-center border border-green/20 bg-transparent py-3 text-lg text-white transition duration-300 hover:border-green/50 hover:bg-green/20 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-bold">
           <a href="/ABBAS.pdf" className="flex gap-2" download>
             <p>Download CV </p>
             <ArrowDownToLine className="group-hover:animate-bounce md:-mt-0.5" />

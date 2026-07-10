@@ -61,7 +61,7 @@ const ProjectCart = () => {
                   href={liveLink}
                   target="_blank"
                   rel="noopener, noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100 hover:bg-[#20B2A6]"
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100 hover:bg-green"
                 >
                   <ArrowUpRight className="text-white/80" />
                 </a>
@@ -70,7 +70,7 @@ const ProjectCart = () => {
                   href={repoLink}
                   target="_blank"
                   rel="noopener, noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100 hover:bg-[#20B2A6]"
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100 hover:bg-green"
                 >
                   <img
                     src="/github.png"
@@ -85,12 +85,12 @@ const ProjectCart = () => {
             <div>
               {/* title and link to live */}
               <div className="mt-5 flex justify-between px-5">
-                <p className="font-inter text-xl font-medium text-white/90 transition duration-300 group-hover:text-[#20B2A6]">
+                <p className="font-inter text-xl font-medium text-white/90 transition duration-300 group-hover:text-green">
                   {title}
                 </p>
                 <a href={liveLink} target="_blank" rel="noopener, noreferrer">
                   <ArrowUpRight
-                    className="text-white/40 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-[#20B2A6]"
+                    className="text-white/40 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-green"
                     size={20}
                   />
                 </a>
@@ -107,7 +107,7 @@ const ProjectCart = () => {
                   return (
                     <p
                       key={index}
-                      className="cursor-pointer rounded-full border border-gray-800 bg-[#1A2329] px-2.5 py-1.5 text-xs text-nowrap text-white/40 transition duration-300 hover:border-[#20B2A6] hover:text-[#20B2A6]"
+                      className="cursor-pointer rounded-full border border-gray-800 bg-[#1A2329] px-2.5 py-1.5 text-xs text-nowrap text-white/40 transition duration-300 hover:border-green hover:text-green"
                     >
                       {tag}
                     </p>

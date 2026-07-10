@@ -18,7 +18,7 @@ const ListNavigations = ({
     <div className="flex items-center justify-center gap-5">
       {/* chevron */}
       <div
-        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-[#20b2a6]/30"
+        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-green/30"
         onClick={() => {
           if (activeIndex === 0) {
             setActiveIndex(comments.length - 1);
@@ -36,14 +36,14 @@ const ListNavigations = ({
               onClick={() => {
                 setActiveIndex(index);
               }}
-              className={`h-2 cursor-pointer rounded-full transition duration-300 ${index === activeIndex ? "w-10 bg-[#20b2a6]" : "w-2 bg-gray-700 hover:bg-gray-600"}`}
+              className={`h-2 cursor-pointer rounded-full transition duration-300 ${index === activeIndex ? "w-10 bg-green" : "w-2 bg-gray-700 hover:bg-gray-600"}`}
             ></div>
           );
         })}
       </div>
       {/* chevron */}
       <div
-        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-[#20b2a6]/30"
+        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300 hover:bg-green/30"
         onClick={() => {
           if (activeIndex === comments.length - 1) {
             setActiveIndex(0);

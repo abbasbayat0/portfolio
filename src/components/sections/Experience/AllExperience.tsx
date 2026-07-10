@@ -28,7 +28,7 @@ const AllExperience = () => {
     <section className="relative mt-14 flex flex-col items-center justify-between gap-10">
 
       {/* the line of the time */}
-      <div className="absolute top-1 left-0 h-full w-0.75 rounded-full bg-linear-to-b from-[#20B2A6]/80 md:left-1/2 md:-translate-x-1/2" />
+      <div className="absolute top-1 left-0 h-full w-0.75 rounded-full bg-linear-to-b from-green/80 md:left-1/2 md:-translate-x-1/2" />
 
       {/* map on exp list */}
       {experiences.map((exp, index) => {
@@ -39,7 +39,7 @@ const AllExperience = () => {
         return (
           <div
             key={index}
-            className={`static flex w-10/12 flex-col rounded-2xl border border-[#20B2A6]/40 bg-[#141C21] p-5 md:w-[40%] ${position}`}
+            className={`static flex w-10/12 flex-col rounded-2xl border border-green/40 bg-[#141C21] p-5 md:w-[40%] ${position}`}
           >
             <GreenDots left={left} current={current} />
             <Descriptions

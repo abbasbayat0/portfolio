@@ -19,7 +19,7 @@ const Background = () => {
       <div className="absolute inset-0 min-h-[150%] overflow-hidden">
         {[...Array(30)].map(() => (
           <div
-            className="absolute h-1.5 w-1.5 rounded-full bg-[#20b2a6] opacity-70"
+            className="absolute h-1.5 w-1.5 rounded-full bg-green opacity-70"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,

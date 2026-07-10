@@ -14,7 +14,7 @@ const Descriptions = ({
   return (
     <>
       <p
-        className={`${left ? "md:text-left" : "md:text-right"} font-inter text-sm text-[#20b2a6]`}
+        className={`${left ? "md:text-left" : "md:text-right"} font-inter text-sm text-green`}
       >
         {timeLine}
       </p>

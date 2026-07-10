@@ -4,7 +4,7 @@ const IconicDesc = () => {
   return (
     <div className="sm:w-11/12 lg:w-1/2">
       <Title title="about me" left>
-        <p className="font-inter font-bold text-[#20B2A6]">
+        <p className="font-inter font-bold text-green">
           Building the future,{" "}
           <span className="georgia leading-16 text-white italic">
             one component at a time.
@@ -30,7 +30,7 @@ const IconicDesc = () => {
           developer community.
         </p>
       </div>
-      <div className="mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] shadow-[#20b2a6]/10 backdrop-blur-lg">
+      <div className="mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] shadow-green/10 backdrop-blur-lg">
         <p className="font-inter text-md font-semibold text-white/80 italic lg:text-lg">
           "My mission is to create digital experiences that are not just
           functional, but truly delightful — products that users love to use and
