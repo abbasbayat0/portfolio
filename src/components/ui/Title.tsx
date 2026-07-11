@@ -15,15 +15,15 @@ const Title = ({
     <section
       className={`flex flex-col ${left ? "items-start" : "items-center"}`}
     >
-      <p className="font-inter text-xs md:text-sm text-green uppercase">{title}</p>
+      <p className="text-xs md:text-sm text-green uppercase">{title}</p>
       <p
-        className={`font-inter mt-2 ${!left && "text-center"} md:text-5xl text-4xl font-bold text-green`}
+        className={`mt-2 ${!left && "text-center"} md:text-5xl text-4xl font-bold text-green`}
       >
         {children}
       </p>
       {description && (
         <p
-          className={`font-inter mt-5 w-11/12 text-sm md:text-base text-white/40 ${!left && "text-center"}`}
+          className={`mt-5 w-11/12 text-sm md:text-base text-white/40 ${!left && "text-center"}`}
         >
           {description}
         </p>

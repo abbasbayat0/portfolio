@@ -7,14 +7,14 @@ const Texts = () => {
       {/* badge of frontend */}
       <div className="relative mt-5 -ml-2 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px] md:ml-0">
         <div className="absolute top-3.5 left-3 h-2 w-2 animate-pulse rounded-full bg-[#1FABA0]"></div>
-        <p className="font-inter ml-3 text-sm text-[#1faba0]">
+        <p className="ml-3 text-sm text-[#1faba0]">
           Front-End Developer . Next.JS Specialist
         </p>
       </div>
 
       {/* main text */}
       <div className="mt-8 p-2 md:p-0">
-        <p className="font-inter -ml-5 text-5xl leading-14 font-bold text-white md:ml-0 md:text-7xl md:leading-20">
+        <p className="-ml-5 text-5xl leading-14 font-bold text-white md:ml-0 md:text-7xl md:leading-20">
           Clean{" "}
           <span className="text-green text-shadow-lg/50 text-shadow-green">
             Code
@@ -55,7 +55,7 @@ const Texts = () => {
       {/* social links */}
       <div className="mt-8 flex items-center gap-3">
         <div>
-          <p className="font-inter text-sm font-extralight tracking-wide text-white/50">
+          <p className="text-sm font-extralight tracking-wide text-white/50">
             Follow Me :
           </p>
         </div>

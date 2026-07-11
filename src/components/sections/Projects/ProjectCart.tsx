@@ -85,7 +85,7 @@ const ProjectCart = () => {
             <div>
               {/* title and link to live */}
               <div className="mt-5 flex justify-between px-5">
-                <p className="font-inter text-xl font-medium text-white/90 transition duration-300 group-hover:text-green">
+                <p className="text-xl font-medium text-white/90 transition duration-300 group-hover:text-green">
                   {title}
                 </p>
                 <a href={liveLink} target="_blank" rel="noopener, noreferrer">
@@ -97,7 +97,7 @@ const ProjectCart = () => {
               </div>
 
               {/* description */}
-              <p className="font-inter mt-4 px-5 text-sm font-extralight tracking-wide text-white/40">
+              <p className="mt-4 px-5 text-sm font-extralight tracking-wide text-white/40">
                 {description}
               </p>
 

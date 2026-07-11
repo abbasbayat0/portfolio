@@ -10,7 +10,7 @@ const Image = () => {
 
         {/* EXP */}
         <div className="md:py-auto md:px-auto absolute -top-1/12 left-0 flex animate-[ex_3s_ease-in-out_infinite] items-center justify-center rounded-xl border border-[#1a2329] bg-[#1a2329]/50 px-1 py-1 backdrop-blur-xs min-[500px]:-top-8 min-[500px]:-left-5 min-[870px]:top-0 md:-top-10 md:h-20 md:w-24">
-          <p className="font-inter text-xs font-extralight tracking-wide text-white/60">
+          <p className="text-xs font-extralight tracking-wide text-white/60">
             <span className="text-2xl font-bold text-green md:text-3xl">
               2+
             </span>{" "}
@@ -22,7 +22,7 @@ const Image = () => {
         {/* available */}
         <div className="md:px-auto md:py-auto absolute right-0 bottom-0 flex animate-[ex_3s_ease-in-out_infinite] items-center justify-center gap-2 rounded-xl border border-[#1a2329] bg-[#1a2329]/50 px-2 py-1 backdrop-blur-xs md:h-10 md:w-40">
           <div className="h-3 w-3 animate-pulse rounded-full bg-[#01BE4C]" />
-          <p className="font-inter text-xs text-white/90 md:text-xs">
+          <p className="text-xs text-white/90 md:text-xs">
             Available For Work
           </p>
         </div>

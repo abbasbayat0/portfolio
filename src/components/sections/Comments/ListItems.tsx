@@ -17,7 +17,7 @@ const ListItems = ({
         <Quote className="text-white" size={25} />
       </div>
       <div>
-        <p className="font-inter text-lg text-white/90 md:text-2xl">
+        <p className="text-lg text-white/90 md:text-2xl">
           " {comment} "
         </p>
       </div>
@@ -30,10 +30,10 @@ const ListItems = ({
           />
         </div>
         <div className="flex flex-col">
-          <p className="font-inter text-lg font-medium tracking-wide text-white">
+          <p className="text-lg font-medium tracking-wide text-white">
             {name}
           </p>
-          <p className="font-inter text-sm font-light tracking-wider text-white/40">
+          <p className="text-sm font-light tracking-wider text-white/40">
             {position}
           </p>
         </div>

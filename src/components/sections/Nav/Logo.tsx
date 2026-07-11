@@ -3,7 +3,7 @@ const Logo = () => {
     <section>
       <a
         href="/"
-        className="font-inter text-2xl font-semibold tracking-[-1px] text-white transition duration-300 hover:text-green"
+        className="text-2xl font-semibold tracking-[-1px] text-white transition duration-300 hover:text-green"
       >
         AB<span className="text-green">.</span>
       </a>

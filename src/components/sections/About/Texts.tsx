@@ -8,10 +8,10 @@ const Texts = () => {
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
           <CodeXml className="text-green" />
         </div>
-        <p className="font-inter mt-4 text-lg font-semibold tracking-wide text-white/90">
+        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
           Clean Code
         </p>
-        <p className="font-inter mt-2 text-sm tracking-wide text-white/40">
+        <p className="mt-2 text-sm tracking-wide text-white/40">
           Writing maintainable, scalable code that stands the test of time.
         </p>
       </div>
@@ -21,10 +21,10 @@ const Texts = () => {
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
           <Rocket className="text-green" />
         </div>
-        <p className="font-inter mt-4 text-lg font-semibold tracking-wide text-white/90">
+        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
           Performance
         </p>
-        <p className="font-inter mt-2 text-sm tracking-wide text-white/40">
+        <p className="mt-2 text-sm tracking-wide text-white/40">
           Optimizing for speed and delivering lightning-fast user experiences.
         </p>
       </div>
@@ -34,10 +34,10 @@ const Texts = () => {
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
           <UserSearch className="text-green" />
         </div>
-        <p className="font-inter mt-4 text-lg font-semibold tracking-wide text-white/90">
+        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
           Collaboration
         </p>
-        <p className="font-inter mt-2 text-sm tracking-wide text-white/40">
+        <p className="mt-2 text-sm tracking-wide text-white/40">
           Working closely with teams to bring ideas to life.
         </p>
       </div>
@@ -47,10 +47,10 @@ const Texts = () => {
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
           <Lightbulb className="text-green" />
         </div>
-        <p className="font-inter mt-4 text-lg font-semibold tracking-wide text-white/90">
+        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
           Innovation
         </p>
-        <p className="font-inter mt-2 text-sm tracking-wide text-white/40">
+        <p className="mt-2 text-sm tracking-wide text-white/40">
           Staying ahead with the latest technologies and best practices.
         </p>
       </div>

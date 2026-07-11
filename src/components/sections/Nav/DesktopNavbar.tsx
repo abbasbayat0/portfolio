@@ -14,7 +14,7 @@ const DesktopNavbar = ({
             <a
               href={link.href}
               key={link.label}
-              className="font-inter flex items-center justify-center rounded-full px-3 py-1 text-sm tracking-wide text-gray-300/60 transition duration-300 hover:bg-[#1a2329]/40 hover:text-gray-300"
+              className="flex items-center justify-center rounded-full px-3 py-1 text-sm tracking-wide text-gray-300/60 transition duration-300 hover:bg-[#1a2329]/40 hover:text-gray-300"
             >
               {link.label}
             </a>

@@ -11,7 +11,7 @@ const Experience = () => {
       "
         left
       >
-        <p className="font-inter text-green mt-5 font-bold">
+        <p className="text-green mt-5 font-bold">
           Experience that{" "}
           <span className="georgia text-white italic">speaks volumes.</span>
         </p>

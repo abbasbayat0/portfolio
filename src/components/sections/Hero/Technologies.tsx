@@ -29,7 +29,7 @@ const Technologies = () => {
   return (
     <section className="flex w-full flex-col justify-center overflow-x-hidden">
       <div>
-        <p className="text-center text-sm text-white/50 font-inter">
+        <p className="text-center text-sm text-white/50">
           Technologies I Work With
         </p>
       </div>
@@ -37,7 +37,7 @@ const Technologies = () => {
         {[...listOfTech, ...listOfTech].map((tech, index) => {
           return (
             <div
-              className="cursor-pointer text-xl font-inter font-semibold text-nowrap text-white/30"
+              className="cursor-pointer text-xl font-semibold text-nowrap text-white/30"
               key={index}
             >
               {tech}
@@ -48,7 +48,7 @@ const Technologies = () => {
       </div>
       <div className="absolute h-8 mb-4 w-full bg-linear-to-r from-[#0F1418] via-transparent to-[#0F1418]"></div>
       <div className="mt-5 flex flex-col items-center justify-center w-full">
-        <p className="text-white/50 text-center text-sm tracking-wider font-inter md:text-xs">SCROLL</p>
+        <p className="text-white/50 text-center text-sm tracking-wider md:text-xs">SCROLL</p>
         <ChevronDown className="text-white/50 animate-bounce mt-1" />
       </div>
     </section>

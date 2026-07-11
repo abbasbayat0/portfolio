@@ -10,7 +10,7 @@ const Projects = () => {
         description="A selection of my recent work, from complex web applications to
         innovative tools that solve real-world problems."
       >
-        <p className="font-inter text-green mt-5 text-center font-bold">
+        <p className="text-green mt-5 text-center font-bold">
           Projects that{" "}
           <span className="georgia text-white italic">make an impact.</span>
         </p>

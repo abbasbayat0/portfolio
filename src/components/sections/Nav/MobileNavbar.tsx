@@ -29,7 +29,7 @@ const MobileNavbar = ({
                   <a
                     href={link.href}
                     key={link.label}
-                    className="font-inter mt-3 flex justify-center rounded-full py-1 tracking-wide text-white/70"
+                    className="mt-3 flex justify-center rounded-full py-1 tracking-wide text-white/70"
                   >
                     {link.label}
                   </a>

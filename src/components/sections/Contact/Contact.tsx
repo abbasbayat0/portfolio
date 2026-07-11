@@ -9,7 +9,7 @@ const Contact = () => {
         title="get in touch"
         description="Have a project in mind? I'd love to hear about it. Send me a message and let's discuss how we can work together."
       >
-        <p className="font-inter text-green mt-5 text-center font-bold">
+        <p className="text-green mt-5 text-center font-bold">
           Let's build{" "}
           <span className="georgia text-white italic">something great.</span>
         </p>
