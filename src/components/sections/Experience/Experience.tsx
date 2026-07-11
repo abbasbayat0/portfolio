@@ -3,7 +3,10 @@ import AllExperience from "./AllExperience";
 
 const Experience = () => {
   return (
-    <article className="relative z-10 mt-36 flex max-w-375 flex-col">
+    <article
+      id="experience"
+      className="relative z-10 mt-36 flex max-w-375 scroll-m-22 flex-col"
+    >
       <Title
         title="career journey"
         description="A timeline of my professional growth, from curious beginner to senior

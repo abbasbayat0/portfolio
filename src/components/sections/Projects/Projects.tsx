@@ -4,7 +4,10 @@ import ViewAll from "./ViewAll";
 
 const Projects = () => {
   return (
-    <article className="relative z-10 mt-36 flex max-w-375 flex-col items-center justify-center">
+    <article
+      id="projects"
+      className="relative z-10 mt-36 flex max-w-375 scroll-m-22 flex-col items-center justify-center"
+    >
       <Title
         title="featured works"
         description="A selection of my recent work, from complex web applications to

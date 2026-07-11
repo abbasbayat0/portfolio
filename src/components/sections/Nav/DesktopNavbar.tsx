@@ -1,6 +1,5 @@
 import Button from "../../ui/Button";
 
-
 const DesktopNavbar = ({
   navLinks,
 }: {
@@ -22,7 +21,9 @@ const DesktopNavbar = ({
         })}
       </section>
       <section className="hidden md:block">
-        <Button children="Contact Me" />
+        <a href="#contact">
+          <Button children="Contact Me" />
+        </a>
       </section>
     </>
   );

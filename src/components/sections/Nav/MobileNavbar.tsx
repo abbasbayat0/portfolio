@@ -36,7 +36,9 @@ const MobileNavbar = ({
                 );
               })}
             </div>
-            <Button children="Contact Me" className="mt-5 w-full" size="lg" />
+            <a href="#contact">
+              <Button children="Contact Me" className="mt-5 w-full" size="lg" />
+            </a>
           </motion.section>
         ) : null}
       </AnimatePresence>

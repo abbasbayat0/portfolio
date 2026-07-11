@@ -1,4 +1,4 @@
-import { ArrowDownToLine, ArrowRight } from "lucide-react"
+import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import Button from "../../ui/Button";
 
 const Texts = () => {
@@ -16,7 +16,7 @@ const Texts = () => {
       <div className="mt-8 p-2 md:p-0">
         <p className="-ml-5 text-5xl leading-14 font-bold text-white md:ml-0 md:text-7xl md:leading-20">
           Clean{" "}
-          <span className="text-green text-shadow-lg/50 text-shadow-green">
+          <span className="text-green text-shadow-green text-shadow-lg/50">
             Code
           </span>
           <br /> From Beautiful <br />
@@ -36,15 +36,17 @@ const Texts = () => {
       {/* buttons */}
       <div className="mt-8 -ml-1 flex flex-col gap-4 min-[500px]:flex-row md:gap-2">
         {/* contact */}
-        <Button className="flex w-50 items-center justify-center py-3 text-lg text-white/80 hover:text-white min-[850px]:w-40 md:text-[14px] lg:text-base lg:font-semibold">
-          <div className="flex gap-2">
-            <p className="text-shadow-sm text-shadow-white/20">Contact Me </p>
-            <ArrowRight className="mt-0.5 md:mt-0 lg:-mt-0.5" />
-          </div>
-        </Button>
+        <a href="#contact">
+          <Button className="flex w-50 items-center justify-center py-3 text-lg text-white/80 hover:text-white min-[850px]:w-40 md:text-[14px] lg:text-base lg:font-semibold">
+            <div className="flex gap-2">
+              <p className="text-shadow-sm text-shadow-white/20">Contact Me </p>
+              <ArrowRight className="mt-0.5 md:mt-0 lg:-mt-0.5" />
+            </div>
+          </Button>
+        </a>
 
         {/* CV */}
-        <Button className="group flex w-50 items-center justify-center border border-green/20 bg-transparent py-3 text-lg text-white transition duration-300 hover:border-green/50 hover:bg-green/20 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-bold">
+        <Button className="group border-green/20 hover:border-green/50 hover:bg-green/20 flex w-50 items-center justify-center border bg-transparent py-3 text-lg text-white transition duration-300 min-[850px]:w-40 md:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-bold">
           <a href="/ABBAS.pdf" className="flex gap-2" download>
             <p>Download CV </p>
             <ArrowDownToLine className="group-hover:animate-bounce md:-mt-0.5" />
