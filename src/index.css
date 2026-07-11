@@ -6,6 +6,26 @@
   --color-green: #20b2a6;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-green);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-green);
+  box-shadow: 0 0 10px var(--color-green);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-green) transparent;
+}
+
 @keyframes dots {
   0%,
   100% {
