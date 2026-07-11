@@ -11,13 +11,12 @@ const Home = () => {
   return (
     <div
       id="main"
-      className="relative min-h-screen w-screen overflow-x-hidden bg-[#0f1418]"
+      className="relative min-h-screen w-screen overflow-hidden bg-[#0f1418]"
     >
-      <Background />
       <header className="w-screen max-w-350 overflow-x-hidden px-14 py-5">
         <Navbar />
       </header>
-      <main className="absolute left-1/2 w-screen max-w-350 -translate-x-1/2 overflow-x-hidden overflow-y-hidden px-7 py-5 xl:px-14">
+      <main className="w-screen max-w-350 overflow-hidden px-7 py-5 xl:px-14">
         <Hero />
         <About />
         <Projects />
@@ -25,7 +24,10 @@ const Home = () => {
         <Comments />
         <Contact />
       </main>
-      <footer></footer>
+      <footer className="">
+        <p className="text-white">hellowwwww from footer</p>
+      </footer>
+      <Background />
     </div>
   );
 };

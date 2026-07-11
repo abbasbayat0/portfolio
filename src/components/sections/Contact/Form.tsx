@@ -10,7 +10,7 @@ const Form = () => {
       >
         <label
           htmlFor="name"
-          className="font-inter text-sm font-bold tracking-wide text-white"
+          className="font-inter text-sm tracking-wide text-white"
         >
           Name
         </label>
@@ -18,12 +18,12 @@ const Form = () => {
           type="text"
           id="name"
           required
-          className="font-inter focus:border-green -mt-4 rounded-lg border border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:border-2 focus:outline-none"
+          className="font-inter focus:border-green focus:text-white -mt-4 rounded-lg border-2 border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:outline-none"
           placeholder="Your name"
         />
         <label
           htmlFor="email"
-          className="font-inter text-sm font-bold tracking-wide text-white"
+          className="font-inter text-sm tracking-wide text-white"
         >
           Email
         </label>
@@ -31,12 +31,12 @@ const Form = () => {
           type="email"
           id="email"
           required
-          className="font-inter focus:border-green -mt-4 rounded-lg border border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:border-2 focus:outline-none"
+          className="font-inter focus:border-green focus:text-white -mt-4 rounded-lg border-2 border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:outline-none"
           placeholder="Your email"
         />
         <label
           htmlFor="message"
-          className="font-inter text-sm font-bold tracking-wide text-white"
+          className="font-inter text-sm tracking-wide text-white"
         >
           Message
         </label>
@@ -45,7 +45,7 @@ const Form = () => {
           name="message"
           id="message"
           required
-          className="font-inter focus:border-green -mt-4 resize-none rounded-lg border-2 border-gray-700/50 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:outline-none"
+          className="font-inter focus:border-green focus:text-white -mt-4 resize-none rounded-lg border-2 border-gray-700/50 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:outline-none"
           placeholder="Your message"
         ></textarea>
         <button type="submit" className="flex w-full justify-center lg:px-5">
