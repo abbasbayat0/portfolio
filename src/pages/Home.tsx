@@ -4,7 +4,7 @@ import Contact from "../components/sections/Contact/Contact";
 import Experience from "../components/sections/Experience/Experience";
 import Background from "../components/sections/Hero/Background";
 import Hero from "../components/sections/Hero/Hero";
-import Navbar from "../components/sections/Nav/Navbar";
+import Nav from "../components/sections/Nav/Nav";
 import Projects from "../components/sections/Projects/Projects";
 
 const Home = () => {
@@ -14,9 +14,9 @@ const Home = () => {
       className="relative min-h-screen w-screen overflow-hidden bg-[#0f1418]"
     >
       <header className="w-screen max-w-350 overflow-x-hidden px-14 py-5">
-        <Navbar />
+        <Nav />
       </header>
-      <main className="w-screen max-w-350 overflow-hidden px-7 py-5 xl:px-14">
+      <main className="mx-auto w-screen max-w-350 px-7 py-5 xl:px-14">
         <Hero />
         <About />
         <Projects />

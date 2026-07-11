@@ -2,7 +2,6 @@ import DesktopNavbar from "./DesktopNavbar";
 import Logo from "./Logo";
 import MobileNavbar from "./MobileNavbar";
 
-
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -10,14 +9,14 @@ const navLinks = [
   { href: "#testimonials", label: "Testimonials" },
 ];
 
-const Navbar = () => {
+const Nav = () => {
   return (
-    <article className="fixed left-1/2 -translate-x-1/2 z-20 flex w-11/12 items-center max-w-340 justify-between bg-gray-700/20 backdrop-blur-[6px] py-2 px-5 rounded-full">
+    <nav className="fixed top-5 left-1/2 z-20 flex w-11/12 max-w-340 -translate-x-1/2 items-center justify-between rounded-full bg-gray-700/20 px-5 py-2 backdrop-blur-[6px]">
       <Logo />
       <MobileNavbar navLinks={navLinks} />
       <DesktopNavbar navLinks={navLinks} />
-    </article>
+    </nav>
   );
 };
 
-export default Navbar;
+export default Nav;

@@ -33,7 +33,7 @@ const Technologies = () => {
           Technologies I Work With
         </p>
       </div>
-      <div className="relative mx-auto mt-5 flex w-full gap-10 animate-[tech_300s_linear_infinite]">
+      <div className="relative mx-auto mt-5 flex w-full animate-[tech_300s_linear_infinite] gap-10">
         {[...listOfTech, ...listOfTech].map((tech, index) => {
           return (
             <div
@@ -46,10 +46,12 @@ const Technologies = () => {
         })}
         {/* fade animations */}
       </div>
-      <div className="absolute h-8 mb-4 w-full bg-linear-to-r from-[#0F1418] via-transparent to-[#0F1418]"></div>
-      <div className="mt-5 flex flex-col items-center justify-center w-full">
-        <p className="text-white/50 text-center text-sm tracking-wider md:text-xs">SCROLL</p>
-        <ChevronDown className="text-white/50 animate-bounce mt-1" />
+      <div className="absolute mb-4 h-8 w-full bg-linear-to-r from-[#0F1418] via-transparent to-[#0F1418]"></div>
+      <div className="mt-5 flex w-full flex-col items-center justify-center">
+        <p className="text-center text-sm tracking-wider text-white/50 md:text-xs">
+          SCROLL
+        </p>
+        <ChevronDown className="mt-1 animate-bounce text-white/50" />
       </div>
     </section>
   );

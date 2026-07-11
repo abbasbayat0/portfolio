@@ -19,6 +19,7 @@ const Button = ({
     default: "px-4 py-2",
     lg: "px-6 py-3",
   };
+
   const combinedClass = cn(
     SIZE_MAP[size],
     "bg-green/80 rounded-full text-sm text-white/80 cursor-pointer hover:bg-green transition duration-300 hover:text-white",
