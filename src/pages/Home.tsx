@@ -1,11 +1,7 @@
-import About from "../components/sections/About/About";
-import Comments from "../components/sections/Comments/Comments";
-import Contact from "../components/sections/Contact/Contact";
-import Experience from "../components/sections/Experience/Experience";
+import Header from "../components/sections/Header/Header";
+import Main from "../components/sections/Main/Main";
+import Footer from "../components/sections/Footer/Footer";
 import Background from "../components/sections/Hero/Background";
-import Hero from "../components/sections/Hero/Hero";
-import Nav from "../components/sections/Nav/Nav";
-import Projects from "../components/sections/Projects/Projects";
 
 const Home = () => {
   return (
@@ -13,20 +9,9 @@ const Home = () => {
       id="main"
       className="relative min-h-screen w-screen overflow-hidden bg-[#0f1418]"
     >
-      <header className="w-screen max-w-350 overflow-x-hidden px-14 py-5">
-        <Nav />
-      </header>
-      <main className="mx-auto w-screen max-w-350 px-7 py-5 xl:px-14">
-        <Hero />
-        <About />
-        <Projects />
-        <Experience />
-        <Comments />
-        <Contact />
-      </main>
-      <footer className="">
-        <p className="text-white">hellowwwww from footer</p>
-      </footer>
+      <Header />
+      <Main />
+      <Footer />
       <Background />
     </div>
   );
