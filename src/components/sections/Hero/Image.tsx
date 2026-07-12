@@ -3,7 +3,7 @@ const Image = () => {
     <section className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 md:-mt-44 md:max-w-1/2 md:min-w-1/2 md:justify-end lg:-mb-44">
       <div className="relative max-w-113 min-[870px]:w-11/12 md:w-full">
         <img
-          src="/main.png"
+          src="main.png"
           alt="abbas bayat true picture"
           className="rounded-xl border-5 border-[#1a2329]/30"
         />
@@ -30,7 +30,7 @@ const Image = () => {
 
       {/* animation */}
       <div className="absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] shadow-green/30 min-[870px]:w-11/12 md:w-full">
-        <img src="/main.png" alt="" className="opacity-0" />
+        <img src="main.png" alt="" className="opacity-0" />
       </div>
     </section>
   );
