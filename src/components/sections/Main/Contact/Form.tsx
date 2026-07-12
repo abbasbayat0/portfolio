@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div className="border-green/40 w-full rounded-3xl border bg-[#151E23] px-5 py-8 lg:px-10 lg:py-12">
       <form
-        action="https://formsubmit.co/abbas0bayat@gmail.com"
+        action="https://api.slapform.com/fmyoFNgzX"
         method="POST"
         className="flex h-full w-full flex-col justify-between gap-6"
       >
