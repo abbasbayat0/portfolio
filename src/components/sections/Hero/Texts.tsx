@@ -1,5 +1,6 @@
 import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import Button from "../../ui/Button";
+import SocialIcons from "../../ui/SocialIcons";
 
 const Texts = () => {
   return (
@@ -62,22 +63,7 @@ const Texts = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <a
-            href="https://github.com/abbasbayat0"
-            rel="noopener, noreferrer"
-            target="_blank"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700/30 bg-gray-700/20 backdrop-blur-lg"
-          >
-            <img src="/github.png" alt="" className="h-5 w-5" />
-          </a>
-          <a
-            href="https://t.me/abbasbayat"
-            rel="noopener, noreferrer"
-            target="_blank"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700/30 bg-gray-700/20 backdrop-blur-lg"
-          >
-            <img src="/telegram.png" alt="" className="h-5 w-5" />
-          </a>
+          <SocialIcons />
         </div>
       </div>
     </section>
