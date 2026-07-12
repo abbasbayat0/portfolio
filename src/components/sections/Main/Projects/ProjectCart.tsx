@@ -49,7 +49,7 @@ const ProjectCart = () => {
             {/* poster */}
             <div className="relative h-80 w-full overflow-hidden">
               <img
-                src={import.meta.env.BASE_URL + image}
+                src={image}
                 alt={`an screenshot of ${project.title}`}
                 className="h-80 w-full transition duration-300 group-hover:scale-110 group-hover:blur-xs"
               />
@@ -60,6 +60,7 @@ const ProjectCart = () => {
                 <a
                   href={liveLink}
                   target="_blank"
+                  title="live demo of the project"
                   rel="noopener, noreferrer"
                   className="hover:bg-green flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100"
                 >
@@ -68,12 +69,13 @@ const ProjectCart = () => {
                 {/* github */}
                 <a
                   href={repoLink}
+                  title="repository of project"
                   target="_blank"
                   rel="noopener, noreferrer"
                   className="hover:bg-green flex h-12 w-12 items-center justify-center rounded-full bg-[#1A2329]/80 opacity-0 backdrop-blur-lg transition duration-300 group-hover:opacity-100"
                 >
                   <img
-                    src={import.meta.env.BASE_URL + "github.png"}
+                    src={import.meta.env.BASE_URL + "icons/github.png"}
                     alt="view the source code"
                     className="h-6 w-6"
                   />
@@ -85,19 +87,19 @@ const ProjectCart = () => {
             <div>
               {/* title and link to live */}
               <div className="mt-5 flex justify-between px-5">
-                <p className="group-hover:text-green text-xl font-medium text-white/90 transition duration-300">
+                <p className="group-hover:text-green text-xl font-medium text-white transition duration-300">
                   {title}
                 </p>
-                <a href={liveLink} target="_blank" rel="noopener, noreferrer">
+                <a href={liveLink} target="_blank" rel="noopener, noreferrer" title="live demo of the project">
                   <ArrowUpRight
-                    className="group-hover:text-green text-white/40 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                    className="group-hover:text-green text-white/50 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                     size={20}
                   />
                 </a>
               </div>
 
               {/* description */}
-              <p className="mt-4 px-5 text-sm font-extralight tracking-wide text-white/40">
+              <p className="mt-4 px-5 text-[13px] font-light tracking-wider text-white/50">
                 {description}
               </p>
 
@@ -107,7 +109,7 @@ const ProjectCart = () => {
                   return (
                     <p
                       key={index}
-                      className="hover:border-green hover:text-green cursor-pointer rounded-full border border-gray-800 bg-[#1A2329] px-2.5 py-1.5 text-xs text-nowrap text-white/40 transition duration-300"
+                      className="hover:border-green hover:text-green cursor-pointer rounded-full border border-gray-800 bg-[#1A2329] px-2.5 py-1.5 text-xs text-nowrap text-white/50 transition duration-300"
                     >
                       {tag}
                     </p>

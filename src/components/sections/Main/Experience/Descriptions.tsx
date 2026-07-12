@@ -24,12 +24,12 @@ const Descriptions = ({
         {title}
       </p>
       <p
-        className={`${left ? "md:text-left" : "md:text-right"} text-sm text-white/30`}
+        className={`${left ? "md:text-left" : "md:text-right"} text-sm text-white/50 tracking-wide`}
       >
         {company}
       </p>
       <p
-        className={`${left ? "md:text-left" : "md:text-right"} mt-5 text-sm tracking-wide text-white/40`}
+        className={`${left ? "md:text-left" : "md:text-right"} mt-5 text-[13px] tracking-wider text-white/50`}
       >
         {desc}
       </p>

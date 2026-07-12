@@ -1,9 +1,9 @@
-import About from "../About/About";
-import Comments from "../Comments/Comments";
-import Contact from "../Contact/Contact";
-import Experience from "../Experience/Experience";
-import Hero from "../Hero/Hero";
-import Projects from "../Projects/Projects";
+import About from "./About/About";
+import Comments from "./Comments/Comments";
+import Contact from "./Contact/Contact";
+import Experience from "./Experience/Experience";
+import Hero from "./Hero/Hero";
+import Projects from "./Projects/Projects";
 
 const Main = () => {
   return (

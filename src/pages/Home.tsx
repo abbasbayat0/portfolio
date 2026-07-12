@@ -1,7 +1,7 @@
 import Header from "../components/sections/Header/Header";
 import Main from "../components/sections/Main/Main";
 import Footer from "../components/sections/Footer/Footer";
-import Background from "../components/sections/Hero/Background";
+import Background from "../components/sections/Main/Hero/Background";
 
 const Home = () => {
   return (

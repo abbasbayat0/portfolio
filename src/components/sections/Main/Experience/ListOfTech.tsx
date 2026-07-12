@@ -13,7 +13,7 @@ const ListOfTech = ({
         return (
           <p
             key={index}
-            className={`${left ? "text-left" : "text-right"} rounded-full bg-gray-700/20 px-2 py-1 text-[11px] tracking-wider text-nowrap text-white/30`}
+            className={`${left ? "text-left" : "text-right"} rounded-full bg-gray-700/20 px-2 py-1 text-[11px] tracking-wider text-nowrap text-white/50`}
           >
             {tech}
           </p>

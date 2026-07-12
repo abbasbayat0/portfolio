@@ -1,4 +1,5 @@
-import Title from "../../ui/Title";
+
+import Title from "../../../ui/Title";
 import List from "./List";
 
 const Comments = () => {

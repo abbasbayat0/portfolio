@@ -5,7 +5,11 @@ const Background = () => {
     <>
       <div className="absolute inset-0 h-screen overflow-hidden">
         {/* background image */}
-        <img src="hero-bg.jpg" alt="hero background" className="min-w-5xl xl:min-w-screen mx-auto" />
+        <img
+          src="hero-bg.jpg"
+          alt="hero background"
+          className="mx-auto w-5xl min-w-5xl xl:min-w-screen"
+        />
       </div>
 
       {/* background shadow */}

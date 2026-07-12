@@ -1,4 +1,4 @@
-import Title from "../../ui/Title";
+import Title from "../../../ui/Title";
 
 const Texts = () => {
   return (

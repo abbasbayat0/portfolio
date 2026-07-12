@@ -8,7 +8,7 @@ const Footer = () => {
         <SocialIcons />
       </article>
       <article>
-        <p className="text-sm tracking-wide text-white/40">
+        <p className="text-sm tracking-wide text-white/50">
           © 2026 <span className="text-green">ABBAS BAYAT</span>. All rights
           reserved.
         </p>

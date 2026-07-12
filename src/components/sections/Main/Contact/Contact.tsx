@@ -1,4 +1,4 @@
-import Title from "../../ui/Title";
+import Title from "../../../ui/Title";
 import ContactInformation from "./ContactInformation";
 import Form from "./Form";
 

@@ -1,6 +1,6 @@
 import { ArrowDownToLine, ArrowRight } from "lucide-react";
-import Button from "../../ui/Button";
-import SocialIcons from "../../ui/SocialIcons";
+import Button from "../../../ui/Button";
+import SocialIcons from "../../../ui/SocialIcons";
 
 const Texts = () => {
   return (

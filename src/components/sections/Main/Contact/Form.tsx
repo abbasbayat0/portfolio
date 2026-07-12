@@ -1,5 +1,5 @@
 import { Send } from "lucide-react";
-import Button from "../../ui/Button";
+import Button from "../../../ui/Button";
 
 const Form = () => {
   return (
