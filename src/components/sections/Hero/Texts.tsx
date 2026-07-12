@@ -27,7 +27,7 @@ const Texts = () => {
 
       {/* description */}
       <div className="mt-5 lg:mt-8 lg:w-9/12">
-        <p className="font-sans text-lg font-semibold text-[#7a8491]">
+        <p className="font-sans text-lg font-medium text-[#7a8491]">
           Hi, I'm Abbas Bayat - a front-end developer specializing in Next.JS,
           React.JS, and TypeScript. I build scalable, performant web
           applications that users love.
@@ -38,7 +38,7 @@ const Texts = () => {
       <div className="mt-8 -ml-1 flex flex-col gap-4 min-[500px]:flex-row lg:gap-2">
         {/* contact */}
         <a href="#contact">
-          <Button className="flex w-50 items-center justify-center py-3 text-lg text-white transition duration-300 hover:text-white min-[850px]:w-40 lg:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-medium lg:tracking-wide">
+          <Button className="flex w-50 items-center justify-center py-3 text-lg text-white transition duration-300 hover:text-white min-[850px]:w-40 lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:text-[14px] lg:font-medium lg:tracking-wide">
             <div className="flex gap-2">
               <p className="text-shadow-sm text-shadow-white/20">Contact Me </p>
               <ArrowRight className="mt-0.5 lg:-mt-0.5" />
@@ -52,7 +52,7 @@ const Texts = () => {
           className="flex gap-2"
           download
         >
-          <Button className="group border-green/20 hover:border-green/50 hover:bg-green/20 flex w-50 items-center justify-center border bg-transparent py-3 text-lg text-white transition duration-300 lg:text-[14px] lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:font-medium lg:tracking-wide">
+          <Button className="group border-green/20 hover:border-green/50 hover:bg-green/20 flex w-50 items-center justify-center border bg-transparent py-3 text-lg text-white transition duration-300 lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:text-[14px] lg:font-medium lg:tracking-wide">
             <p>Download CV </p>
             <ArrowDownToLine className="group-hover:animate-bounce lg:-mt-0.5" />
           </Button>

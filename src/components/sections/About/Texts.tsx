@@ -1,57 +1,40 @@
-import { CodeXml, Lightbulb, Rocket, UserSearch } from "lucide-react";
+import Title from "../../ui/Title";
 
 const Texts = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-6 lg:w-1/2 lg:justify-end">
-      {/* CLEAN */}
-      <div className="h-52 w-11/12 min-[500px]:w-8/12 sm:w-[45%] rounded-xl border border-gray-800 bg-[#141C21] px-5 py-6 md:w-[45%]">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
-          <CodeXml className="text-green" />
-        </div>
-        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
-          Clean Code
+    <div className="sm:w-11/12 lg:w-1/2">
+      <Title title="about me" left>
+        <p className="font-bold text-green">
+          Building the future,{" "}
+          <span className="georgia leading-16 text-white italic">
+            one component at a time.
+          </span>
         </p>
-        <p className="mt-2 text-sm tracking-wide text-white/40">
-          Writing maintainable, scalable code that stands the test of time.
-        </p>
-      </div>
-
-      {/* PERF */}
-      <div className="h-52 w-11/12 min-[500px]:w-8/12 sm:w-[45%] rounded-xl border border-gray-800 bg-[#141C21] px-5 py-6 md:w-[45%]">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
-          <Rocket className="text-green" />
-        </div>
-        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
-          Performance
-        </p>
-        <p className="mt-2 text-sm tracking-wide text-white/40">
-          Optimizing for speed and delivering lightning-fast user experiences.
-        </p>
-      </div>
-
-      {/* COLLABORATION */}
-      <div className="h-52 w-11/12 min-[500px]:w-8/12 sm:w-[45%] rounded-xl border border-gray-800 bg-[#141C21] px-5 py-6">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
-          <UserSearch className="text-green" />
-        </div>
-        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
-          Collaboration
-        </p>
-        <p className="mt-2 text-sm tracking-wide text-white/40">
-          Working closely with teams to bring ideas to life.
+      </Title>
+      <div className="mt-8">
+        <p className="text-sm font-light tracking-wide text-white/50 md:text-base">
+          I'm a passionate front-end developer with over 2 years of experience
+          crafting digital products that make a difference. My journey started
+          with a curiosity for how things work on the web, and it has evolved
+          into a deep expertise in modern frontend technologies.
+          <br />
+          <br />
+          I specialize in React, Next.js, and TypeScript, building everything
+          from sleek landing pages to complex enterprise applications. My
+          approach combines technical excellence with a keen eye for design and
+          user experience.
+          <br />
+          <br />
+          When I'm not coding, you'll find me exploring new technologies,
+          contributing to open-source projects, or sharing knowledge with the
+          developer community.
         </p>
       </div>
-
-      {/* INNOVATION */}
-      <div className="h-52 w-11/12 min-[500px]:w-8/12 sm:w-[45%] rounded-xl border border-gray-800 bg-[#141C21] px-5 py-6 md:w-[45%]">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">
-          <Lightbulb className="text-green" />
-        </div>
-        <p className="mt-4 text-lg font-semibold tracking-wide text-white/90">
-          Innovation
-        </p>
-        <p className="mt-2 text-sm tracking-wide text-white/40">
-          Staying ahead with the latest technologies and best practices.
+      <div className="mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] shadow-green/10 backdrop-blur-lg">
+        <p className="text-md font-semibold text-white/80 italic lg:text-lg">
+          "My mission is to create digital experiences that are not just
+          functional, but truly delightful — products that users love to use and
+          developers love to maintain."
         </p>
       </div>
     </div>
