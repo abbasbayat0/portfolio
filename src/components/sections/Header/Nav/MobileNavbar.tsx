@@ -28,6 +28,11 @@ const MobileNavbar = ({
                 return (
                   <a
                     href={link.href}
+                    onClick={() =>
+                      setTimeout(() => {
+                        setMobileNavStatus(false);
+                      }, 1500)
+                    }
                     key={link.label}
                     className="mt-3 flex justify-center rounded-full py-1 tracking-wide text-white/70"
                   >
@@ -36,7 +41,14 @@ const MobileNavbar = ({
                 );
               })}
             </div>
-            <a href="#contact">
+            <a
+              href="#contact"
+              onClick={() =>
+                setTimeout(() => {
+                  setMobileNavStatus(false);
+                }, 1500)
+              }
+            >
               <Button children="Contact Me" className="mt-5 w-full" size="lg" />
             </a>
           </motion.section>
