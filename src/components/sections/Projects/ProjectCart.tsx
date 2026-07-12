@@ -5,7 +5,7 @@ const projects = [
     title: "USEO Website",
     description:
       "A sleek, responsive single-page application built with React and Tailwind CSS. It leverages Framer Motion for seamless UI transitions and React Router for intuitive multi-page navigation. Deployed via GitHub Pages.",
-    image: import.meta.env.BASE_URL + "/projects/USEO.jpg",
+    image: import.meta.env.BASE_URL + "projects/USEO.jpg",
     tags: [
       "React",
       "Tailwind CSS",
@@ -20,7 +20,7 @@ const projects = [
     title: "E-Commerce Store",
     description:
       "A fully-featured, enterprise-level online store built with Next.js 15 and TypeScript. This platform integrates a secure multi-provider authentication system (Clerk & Supabase), a robust PostgreSQL database management layer with Prisma ORM, and global state management using Redux Toolkit.",
-    image: import.meta.env.BASE_URL + "/projects/Store.jpg",
+    image: import.meta.env.BASE_URL + "projects/Store.jpg",
     tags: [
       "Next.JS",
       "TypeScript",
