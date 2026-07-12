@@ -1,6 +1,6 @@
 <p align="center">
 
-<img src="./README/banner.png" alt="Portfolio Banner">
+<img width="1008" height="554" alt="1" src="https://github.com/user-attachments/assets/cdc26337-7747-4dc4-b956-561e2008ebf1" />
 
 </p>
 
@@ -118,7 +118,7 @@ Rather than being just another portfolio website, this project reflects how I bu
 
 <p align="center">
 
-<img src="./README/desktop.png" width="90%" alt="Desktop Version">
+<img width="1008" height="554" alt="1" src="https://github.com/user-attachments/assets/cdc26337-7747-4dc4-b956-561e2008ebf1" />
 
 </p>
 
@@ -128,7 +128,8 @@ Rather than being just another portfolio website, this project reflects how I bu
 
 <p align="center">
 
-<img src="./README/mobile.png" width="32%" alt="Mobile Version">
+<img width="215" height="468" alt="2" src="https://github.com/user-attachments/assets/892235da-18b1-442a-a8c5-c464e7b18244" />
+
 
 </p>
 
@@ -138,9 +139,9 @@ Rather than being just another portfolio website, this project reflects how I bu
 
 <p align="center">
 
-<img src="./README/lighthouse-desktop.png" width="48%" alt="Desktop Lighthouse">
+<img width="960" height="385" alt="3" src="https://github.com/user-attachments/assets/aa93d872-f89c-41b3-a2c1-7621fb2bdc53" />
 
-<img src="./README/lighthouse-mobile.png" width="48%" alt="Mobile Lighthouse">
+<img width="960" height="385" alt="4" src="https://github.com/user-attachments/assets/4dc0ee1e-42fd-4a7a-8277-0b0e5d6fc94e" />
 
 </p>
 
