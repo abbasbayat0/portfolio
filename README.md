@@ -1,73 +1,207 @@
-# React + TypeScript + Vite
+<p align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./README/banner.png" alt="Portfolio Banner">
 
-Currently, two official plugins are available:
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<h1 align="center">
+Abbas Bayat Portfolio
+</h1>
 
-## React Compiler
+<p align="center">
+A modern personal portfolio built with React, TypeScript and Vite to showcase my expertise as a Front-End Developer.
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center">
 
-## Expanding the ESLint configuration
+<a href="https://abbasbayat0.github.io/portfolio/">
+<img src="https://img.shields.io/badge/Live-Demo-0A66C2?style=for-the-badge">
+</a>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<a href="https://github.com/abbasbayat0">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+</a>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+</p>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<div align="center">
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Motion](https://img.shields.io/badge/Motion-Animation-FF4D9D?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Responsive-Design-22C55E?style=for-the-badge)
+![SEO](https://img.shields.io/badge/SEO-Optimized-10B981?style=for-the-badge)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)
+
+</div>
+
+---
+
+# 📖 Overview
+
+This project is my personal portfolio, designed to showcase my skills, experience, and approach as a Front-End Developer.
+
+Built with modern technologies and best practices, it focuses on delivering an exceptional user experience through responsive layouts, smooth animations, high performance, and strong SEO optimization.
+
+Rather than being just another portfolio website, this project reflects how I build scalable, maintainable, and production-ready web applications.
+
+---
+
+# ✨ Features
+
+- ⚡ Lightning-fast performance
+- 🎨 Modern & Minimal Design
+- 📱 Fully Responsive Layout
+- 🚀 Performance Optimized
+- 🔍 SEO Optimized
+- ✨ Smooth UI Animations
+- ♿ Accessibility Friendly
+- 🧩 Reusable Components
+- 📦 Production Ready
+- 🎯 Clean Code Architecture
+- 🌙 Excellent User Experience
+
+---
+
+# 🛠 Tech Stack
+
+## Core
+
+- React 19
+- TypeScript
+- Vite
+
+## Styling
+
+- Tailwind CSS v4
+
+## Animation
+
+- Motion
+
+## Icons
+
+- Lucide React
+
+## Utilities
+
+- clsx
+- tailwind-merge
+
+## Development
+
+- ESLint
+- Prettier
+
+## Deployment
+
+- GitHub Pages
+
+---
+
+# 🌐 Website Sections
+
+- 🏠 Hero
+- 👨 About
+- 💼 Experience
+- 🚀 Projects
+- 💬 Comments
+- 📬 Contact
+
+---
+
+# 📸 Screenshots
+
+## Desktop
+
+<p align="center">
+
+<img src="./README/desktop.png" width="90%" alt="Desktop Version">
+
+</p>
+
+---
+
+## Mobile
+
+<p align="center">
+
+<img src="./README/mobile.png" width="32%" alt="Mobile Version">
+
+</p>
+
+---
+
+# 📊 Lighthouse
+
+<p align="center">
+
+<img src="./README/lighthouse-desktop.png" width="48%" alt="Desktop Lighthouse">
+
+<img src="./README/lighthouse-mobile.png" width="48%" alt="Mobile Lighthouse">
+
+</p>
+
+---
+
+# 🚀 Getting Started
+
+## Clone the repository
+
+```bash
+git clone https://github.com/abbasbayat0/portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Navigate to the project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd portfolio
 ```
+
+## Install dependencies
+
+```bash
+npm install
+```
+
+## Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+# 📬 Contact
+
+📧 **Email**
+
+> abbas0bayat@gmail.com
+
+🐙 **GitHub**
+
+> https://github.com/abbasbayat0
+
+💬 **Telegram**
+
+> https://t.me/abbasbayat
+
+---
+
+# 📄 License
+
+**All Rights Reserved © Abbas Bayat**
+
+This project and its source code are intended for portfolio and demonstration purposes only.
+
+Unauthorized copying, modification, redistribution, or commercial use of this project without explicit permission is prohibited.
+
+---
+
+<div align="center">
+
+Made with ❤️ using React, TypeScript & Vite
+
+</div>
