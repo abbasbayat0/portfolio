@@ -1,12 +1,14 @@
-import { Send } from "lucide-react";
+import useSubmitForm from "../../../../hooks/useSubmitForm";
+import FormButton from "./FormButton";
 
 const Form = () => {
+  const { handleSubmit, success, error, isSending, formData, setFormData } =
+    useSubmitForm();
   return (
     <div className="border-green/40 w-full rounded-3xl border bg-[#151E23] px-5 py-8 lg:px-10 lg:py-12">
       <form
-        action="https://api.slapform.com/fmyoFNgzX"
-        method="POST"
         className="flex h-full w-full flex-col justify-between gap-6"
+        onSubmit={handleSubmit}
       >
         <label htmlFor="name" className="text-sm tracking-wide text-white">
           Name
@@ -15,6 +17,10 @@ const Form = () => {
           type="text"
           name="name"
           id="name"
+          value={formData.name}
+          onChange={(e) => {
+            setFormData({ ...formData, name: e.target.value });
+          }}
           required
           className="focus:border-green -mt-4 rounded-lg border-2 border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:text-white focus:outline-none"
           placeholder="Your name"
@@ -26,6 +32,10 @@ const Form = () => {
           type="email"
           id="email"
           name="email"
+          value={formData.email}
+          onChange={(e) => {
+            setFormData({ ...formData, email: e.target.value });
+          }}
           required
           className="focus:border-green -mt-4 rounded-lg border-2 border-gray-800 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:text-white focus:outline-none"
           placeholder="Your email"
@@ -37,14 +47,20 @@ const Form = () => {
           rows={8}
           name="message"
           id="message"
+          value={formData.message}
+          onChange={(e) => {
+            setFormData({ ...formData, message: e.target.value });
+          }}
           required
           className="focus:border-green -mt-4 resize-none rounded-lg border-2 border-gray-700/50 bg-[#1A2329] p-3 text-sm text-white/40 transition duration-300 focus:text-white focus:outline-none"
           placeholder="Your message"
         ></textarea>
-        <button className="text-md shadow-green/40 bg-green/80 hover:bg-green flex w-full cursor-pointer justify-center gap-3 rounded-full px-7 py-4 font-medium text-white/80 shadow-[0_2px_10px_1px] transition duration-300 text-shadow-white/40 text-shadow-xs hover:text-white lg:mx-auto lg:w-10/12">
-          Send Message
-          <Send className="text-white" size={20} />
-        </button>
+        {error.status !== 0 && (
+          <p className="text-center text-sm tracking-wide text-red-500/80">
+            {error.text}
+          </p>
+        )}
+        <FormButton success={success} error={error} isSending={isSending} />
       </form>
     </div>
   );
