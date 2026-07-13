@@ -2,7 +2,7 @@ import SocialIcons from "../../ui/SocialIcons";
 
 const Footer = () => {
   return (
-    <footer className="mt-36 flex flex-col items-center justify-center gap-3 pb-10">
+    <footer className="mt-32 flex flex-col items-center justify-center gap-3 pb-10">
       <article className="h-0.5 w-full bg-gray-800/60" />
       <article className="mt-5 flex items-center gap-3">
         <SocialIcons />

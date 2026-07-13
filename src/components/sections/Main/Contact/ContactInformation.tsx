@@ -29,7 +29,7 @@ const ContactInformation = () => {
           {information.map((info) => {
             const { icon, key, value } = info;
             return (
-              <div className="flex items-center justify-start gap-3">
+              <div key={key} className="flex items-center justify-start gap-3">
                 <div className="rounded-2xl bg-[#192D2F]/80 p-3 sm:p-4">
                   {icon}
                 </div>

@@ -16,8 +16,9 @@ const Background = () => {
       <div className="absolute inset-0 h-screen min-w-screen bg-linear-to-b from-20% to-[#0f1418] to-80%"></div>
 
       {/* green dots */}
-      {[...Array(100)].map(() => (
+      {[...Array(100)].map((i) => (
         <div
+          key={i}
           className="bg-green absolute z-0 h-1.5 w-1.5 rounded-full opacity-70"
           style={{
             top: `${Math.random() * 100}%`,

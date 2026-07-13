@@ -25,6 +25,7 @@ const SocialIcons = () => {
           <a
             href={href}
             rel="noopener, noreferrer"
+            key={alt}
             target="_blank"
             title={alt.slice(0, -4)}
             className={`flex h-10 w-10 items-center justify-center rounded-full border border-gray-700/30 bg-gray-700/20 backdrop-blur-lg ${alt.includes("mail") ? "sm:hidden" : ""}`}
