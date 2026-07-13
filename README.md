@@ -62,6 +62,7 @@ Rather than being just another portfolio website, this project reflects how I bu
 - 📦 Production Ready
 - 🎯 Clean Code Architecture
 - 🌙 Excellent User Experience
+-  📧 EmailJS Integration
 
 ---
 
@@ -80,6 +81,10 @@ Rather than being just another portfolio website, this project reflects how I bu
 ## Animation
 
 - Motion
+
+## Email Service
+
+- EmailJS 
 
 ## Icons
 
