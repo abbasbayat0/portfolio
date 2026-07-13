@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import { motion } from "motion/react";
 
 const ListItems = ({
   name,
@@ -12,7 +13,13 @@ const ListItems = ({
   photo: string;
 }) => {
   return (
-    <div className="shadow-green/10 relative w-full rounded-4xl bg-[#151F24] px-2 pt-16 pb-10 shadow-[0_0_8px_8px] sm:w-9/12 md:px-16">
+    <motion.div
+      initial={{ opacity: 0, translateY: 100 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1, delay: 0.5 }}
+      className="shadow-green/10 relative w-full rounded-4xl bg-[#151F24] px-2 pt-16 pb-10 shadow-[0_0_8px_8px] sm:w-9/12 md:px-16"
+    >
       <div className="bg-green absolute -top-5 left-10 flex h-12 w-12 items-center justify-center rounded-full">
         <Quote className="text-white" size={25} />
       </div>
@@ -34,7 +41,7 @@ const ListItems = ({
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

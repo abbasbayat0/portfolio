@@ -1,4 +1,5 @@
 import Title from "../../../ui/Title";
+import { motion } from "motion/react";
 
 const Texts = () => {
   return (
@@ -11,7 +12,13 @@ const Texts = () => {
           </span>
         </p>
       </Title>
-      <div className="mt-8">
+      <motion.div
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="mt-8"
+      >
         <p className="text-sm font-light tracking-wide text-white/50 md:text-base">
           I'm a passionate front-end developer with over 2 years of experience
           crafting digital products that make a difference. My journey started
@@ -29,14 +36,20 @@ const Texts = () => {
           contributing to open-source projects, or sharing knowledge with the
           developer community.
         </p>
-      </div>
-      <div className="shadow-green/10 mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] backdrop-blur-lg">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="shadow-green/10 mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] backdrop-blur-lg"
+      >
         <p className="text-md font-semibold text-white/80 italic lg:text-lg">
           "My mission is to create digital experiences that are not just
           functional, but truly delightful — products that users love to use and
           developers love to maintain."
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

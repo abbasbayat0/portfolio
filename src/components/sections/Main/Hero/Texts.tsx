@@ -1,10 +1,16 @@
 import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import Button from "../../../ui/Button";
 import SocialIcons from "../../../ui/SocialIcons";
+import { motion } from "motion/react";
 
 const Texts = () => {
   return (
-    <section className="lg:max-w-1/2 lg:min-w-1/2">
+    <motion.section
+      initial={{ filter: "blur(10px)", opacity: 0 }}
+      animate={{ filter: "none", opacity: 1 }}
+      transition={{ duration: 1.5, delay: 1 }}
+      className="lg:max-w-1/2 lg:min-w-1/2"
+    >
       {/* badge of frontend */}
       <div className="relative mt-5 -ml-2 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px] lg:ml-0">
         <div className="absolute top-3.5 left-3 h-2 w-2 animate-pulse rounded-full bg-[#1FABA0]"></div>
@@ -70,7 +76,7 @@ const Texts = () => {
           <SocialIcons />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

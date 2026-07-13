@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import { motion } from "motion/react";
 
 const Technologies = () => {
   const listOfTech = [
@@ -27,7 +28,13 @@ const Technologies = () => {
     "NPM",
   ];
   return (
-    <section className="flex w-full flex-col justify-center overflow-x-hidden">
+    <motion.section
+      initial={{ filter:"blur(10px)" }}
+      viewport={{ once: true }}
+      whileInView={{ filter:"blur(0px)" }}
+      transition={{ duration: 1 }}
+      className="flex w-full flex-col justify-center overflow-x-hidden"
+    >
       <div>
         <p className="text-center text-sm text-white/50">
           Technologies I Work With
@@ -53,7 +60,7 @@ const Technologies = () => {
         </p>
         <ChevronDown className="mt-1 animate-bounce text-white/50" />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

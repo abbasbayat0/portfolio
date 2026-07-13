@@ -1,11 +1,17 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const Image = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
-  const imageUrl = "main.png";
+  const imageUrl = "abbas bayat.png";
 
   return (
-    <section className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 lg:-mt-44 lg:-mb-44 lg:max-w-1/2 lg:min-w-1/2 lg:justify-end">
+    <motion.section
+      initial={{ filter: "blur(10px)", opacity: 0 }}
+      animate={{ filter: "none", opacity: 1 }}
+      transition={{ duration: 1.5, delay: 1 }}
+      className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 lg:-mt-44 lg:-mb-44 lg:max-w-1/2 lg:min-w-1/2 lg:justify-end"
+    >
       <div className="relative max-w-113 min-[870px]:w-11/12 lg:w-full">
         {/* placeholder */}
         <div className="absolute inset-0 overflow-hidden rounded-xl bg-[#1a2329]">
@@ -51,12 +57,12 @@ const Image = () => {
         }}
       >
         <img
-          src={import.meta.env.BASE_URL + "main.png"}
+          src={import.meta.env.BASE_URL + "abbas bayat.png"}
           alt=""
           className="opacity-0"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

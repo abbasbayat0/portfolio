@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ListItems from "./ListItems";
-import ListNavigations from "./ListNavigations";
+import ListNavigation from "./ListNavigation";
 
 const comments = [
   {
@@ -58,7 +58,7 @@ const List = () => {
               comment={comment}
               photo={photo}
             />
-            <ListNavigations
+            <ListNavigation
               comments={comments}
               activeIndex={activeIndex}
               setActiveIndex={setActiveIndex}

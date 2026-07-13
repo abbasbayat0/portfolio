@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "motion/react";
 
 const projects = [
   {
@@ -42,7 +43,11 @@ const ProjectCart = () => {
       {projects.map((project, index) => {
         const { title, image, description, tags, liveLink, repoLink } = project;
         return (
-          <div
+          <motion.div
+            initial={{ opacity: 0, translateY: 100 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, delay: 0.5 * index }}
             key={index}
             className="group flex w-full flex-col overflow-hidden rounded-2xl border border-gray-800 bg-[#141C21] pb-5 md:w-[48%]"
           >
@@ -90,7 +95,12 @@ const ProjectCart = () => {
                 <p className="group-hover:text-green text-xl font-medium text-white transition duration-300">
                   {title}
                 </p>
-                <a href={liveLink} target="_blank" rel="noopener, noreferrer" title="live demo of the project">
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  rel="noopener, noreferrer"
+                  title="live demo of the project"
+                >
                   <ArrowUpRight
                     className="group-hover:text-green text-white/50 transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                     size={20}
@@ -117,7 +127,7 @@ const ProjectCart = () => {
                 })}
               </div>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </section>

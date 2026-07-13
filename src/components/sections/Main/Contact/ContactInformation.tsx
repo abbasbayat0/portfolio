@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { motion } from "motion/react";
 
 const information = [
   {
@@ -21,7 +22,13 @@ const information = [
 const ContactInformation = () => {
   return (
     <div>
-      <div className="flex w-full flex-col gap-8 rounded-3xl border border-gray-700/20 bg-[#151C21] px-5 py-8 sm:px-8 sm:py-10">
+      <motion.div
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="flex w-full flex-col gap-8 rounded-3xl border border-gray-700/20 bg-[#151C21] px-5 py-8 sm:px-8 sm:py-10"
+      >
         <p className="text-lg font-bold tracking-wide text-white sm:text-xl">
           Contact Information
         </p>
@@ -43,10 +50,16 @@ const ContactInformation = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
 
       {/* currently available */}
-      <div className="border-green/40 mt-5 w-full rounded-3xl border bg-[#151E23] px-5 py-8 sm:mt-8">
+      <motion.div
+        initial={{ opacity: 0, translateY: 100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: .5 }}
+        className="border-green/40 mt-5 w-full rounded-3xl border bg-[#151E23] px-5 py-8 sm:mt-8"
+      >
         <div className="flex items-center gap-3">
           <div className="h-3 w-3 animate-pulse rounded-full bg-green-400" />
           <p className="text-md tracking-wide text-white">
@@ -57,7 +70,7 @@ const ContactInformation = () => {
           I'm currently open to new opportunities and exciting projects. Whether
           you need a full-time engineer or a freelance consultant, let's talk!
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

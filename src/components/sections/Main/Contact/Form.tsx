@@ -1,11 +1,18 @@
 import useSubmitForm from "../../../../hooks/useSubmitForm";
 import FormButton from "./FormButton";
+import { motion } from "motion/react";
 
 const Form = () => {
   const { handleSubmit, success, error, isSending, formData, setFormData } =
     useSubmitForm();
   return (
-    <div className="border-green/40 w-full rounded-3xl border bg-[#151E23] px-5 py-8 lg:px-10 lg:py-12">
+    <motion.div
+      initial={{ opacity: 0, translateY: 100 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="border-green/40 w-full rounded-3xl border bg-[#151E23] px-5 py-8 lg:px-10 lg:py-12"
+    >
       <form
         className="flex h-full w-full flex-col justify-between gap-6"
         onSubmit={handleSubmit}
@@ -62,7 +69,7 @@ const Form = () => {
         )}
         <FormButton success={success} error={error} isSending={isSending} />
       </form>
-    </div>
+    </motion.div>
   );
 };
 

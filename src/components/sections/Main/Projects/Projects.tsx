@@ -1,4 +1,3 @@
-
 import Title from "../../../ui/Title";
 import ProjectCart from "./ProjectCart";
 import ViewAll from "./ViewAll";
