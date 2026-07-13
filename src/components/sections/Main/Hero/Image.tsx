@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { motion } from "motion/react";
 
 const Image = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
   const imageUrl = "abbas bayat.png";
 
   return (
@@ -13,22 +11,10 @@ const Image = () => {
       className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 lg:-mt-44 lg:-mb-44 lg:max-w-1/2 lg:min-w-1/2 lg:justify-end"
     >
       <div className="relative max-w-113 min-[870px]:w-11/12 lg:w-full">
-        {/* placeholder */}
-        <div className="absolute inset-0 overflow-hidden rounded-xl bg-[#1a2329]">
-          <div
-            className={`h-full w-full scale-110 bg-cover bg-center transition-all duration-700 ${imageLoaded ? "scale-100 opacity-0 blur-none" : "scale-110 opacity-100 blur-2xl"}`}
-            style={{
-              backgroundImage: `url(${imageUrl})`,
-            }}
-          />
-        </div>
-
-        {/* main pic */}
         <img
           src={imageUrl}
           alt="abbas bayat true picture"
-          className={`relative rounded-xl border-5 border-[#1a2329]/30 transition-opacity duration-1000 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
-          onLoad={() => setImageLoaded(true)}
+          className={`relative rounded-xl border-5 border-[#1a2329]/30 transition-opacity`}
         />
 
         {/* EXP */}
@@ -50,12 +36,7 @@ const Image = () => {
       </div>
 
       {/* shadow */}
-      <div
-        className="shadow-green/30 absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] transition-opacity duration-1000 min-[870px]:w-11/12 lg:w-full"
-        style={{
-          opacity: imageLoaded ? 1 : 0,
-        }}
-      >
+      <div className="shadow-green/30 absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] transition-opacity duration-1000 min-[870px]:w-11/12 lg:w-full">
         <img
           src={import.meta.env.BASE_URL + "abbas bayat.png"}
           alt=""
