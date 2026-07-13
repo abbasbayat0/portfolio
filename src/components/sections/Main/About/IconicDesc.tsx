@@ -1,31 +1,5 @@
-import { CodeXml, Lightbulb, Rocket, UserSearch } from "lucide-react";
 import { motion } from "motion/react";
-
-const listOfDesc = [
-  {
-    icon: <CodeXml className="text-green" />,
-    title: "Clean Code",
-    description:
-      "Writing maintainable, scalable code that stands the test of time.",
-  },
-  {
-    icon: <Rocket className="text-green" />,
-    title: "Performance",
-    description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
-  },
-  {
-    icon: <UserSearch className="text-green" />,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
-  },
-  {
-    icon: <Lightbulb className="text-green" />,
-    title: "Innovation",
-    description:
-      "Staying ahead with the latest technologies and best practices.",
-  },
-];
+import { listOfDesc } from "../../../../assets/data";
 
 const IconicDesc = () => {
   return (

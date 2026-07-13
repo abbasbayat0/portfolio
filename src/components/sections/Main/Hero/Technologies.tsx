@@ -1,37 +1,13 @@
 import { ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
+import { listOfTech } from "../../../../assets/data";
 
 const Technologies = () => {
-  const listOfTech = [
-    "HTML 5",
-    "CSS 3",
-    "TailwindCSS",
-    "Framer Motion",
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React.JS",
-    "Next.JS",
-    "Redux Toolkit",
-    "Zustand",
-    "TanStack Query",
-    "React Hook Form",
-    "Zod",
-    "clerk",
-    "Shadcn/UI",
-    "Axios",
-    "REST APIs",
-    "Git, GitHub",
-    "Vite",
-    "Prettier",
-    "ESLint",
-    "Vercel",
-    "NPM",
-  ];
   return (
     <motion.section
-      initial={{ filter:"blur(10px)" }}
+      initial={{ filter: "blur(10px)" }}
       viewport={{ once: true }}
-      whileInView={{ filter:"blur(0px)" }}
+      whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 1 }}
       className="flex w-full flex-col justify-center overflow-x-hidden"
     >

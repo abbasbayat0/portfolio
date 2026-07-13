@@ -1,14 +1,8 @@
+import { navLinks } from "../../../../assets/data";
 import DesktopNavbar from "./DesktopNavbar";
 import Logo from "./Logo";
 import MobileNavbar from "./MobileNavbar";
 import { motion } from "motion/react";
-
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
-];
 
 const Nav = () => {
   return (

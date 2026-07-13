@@ -1,41 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
-
-const projects = [
-  {
-    title: "USEO Website",
-    description:
-      "A sleek, responsive single-page application built with React and Tailwind CSS. It leverages Framer Motion for seamless UI transitions and React Router for intuitive multi-page navigation. Deployed via GitHub Pages.",
-    image: "projects/USEO.jpg",
-    tags: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-      "React Router",
-      "Gh-Pages",
-    ],
-    liveLink: "https://useo-live.vercel.app/",
-    repoLink: "https://github.com/abbasbayat0/useoLive",
-  },
-  {
-    title: "E-Commerce Store",
-    description:
-      "A fully-featured, enterprise-level online store built with Next.js 15 and TypeScript. This platform integrates a secure multi-provider authentication system (Clerk & Supabase), a robust PostgreSQL database management layer with Prisma ORM, and global state management using Redux Toolkit.",
-    image: "projects/Store.jpg",
-    tags: [
-      "Next.JS",
-      "TypeScript",
-      "Redux Toolkit",
-      "Prisma",
-      "Clerk Auth",
-      "Supabase",
-      "Tailwind CSS",
-      "Zod",
-    ],
-    liveLink: "https://store-zeta-five.vercel.app/",
-    repoLink: "https://github.com/abbasbayat0/store",
-  },
-];
+import { projects } from "../../../../assets/data";
 
 const ProjectCart = () => {
   return (

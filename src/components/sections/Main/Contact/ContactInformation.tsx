@@ -1,23 +1,5 @@
-import { Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "motion/react";
-
-const information = [
-  {
-    icon: <Mail className="text-green" size={20} />,
-    key: "Email",
-    value: "abbas0bayat@gmail.com",
-  },
-  {
-    icon: <Phone className="text-green" size={20} />,
-    key: "Phone",
-    value: "+98 939 905 3410",
-  },
-  {
-    icon: <MapPin className="text-green" size={20} />,
-    key: "Location",
-    value: "Iran, Hamedan, Nahavand",
-  },
-];
+import { information } from "../../../../assets/data";
 
 const ContactInformation = () => {
   return (
@@ -57,7 +39,7 @@ const ContactInformation = () => {
         initial={{ opacity: 0, translateY: 100 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: .5 }}
+        transition={{ duration: 1, delay: 0.25 }}
         className="border-green/40 mt-5 w-full rounded-3xl border bg-[#151E23] px-5 py-8 sm:mt-8"
       >
         <div className="flex items-center gap-3">

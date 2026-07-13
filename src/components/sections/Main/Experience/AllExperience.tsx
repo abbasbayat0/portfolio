@@ -1,28 +1,8 @@
+import { experiences } from "../../../../assets/data";
 import Descriptions from "./Descriptions";
 import GreenDots from "./GreenDots";
 import ListOfTech from "./ListOfTech";
 import { motion } from "motion/react";
-
-const experiences = [
-  {
-    timeLine: "2024 - Present",
-    title: "Front-End Developer",
-    company: "Self Employed",
-    description:
-      "Transitioned from theory to practice by converting documented knowledge into tangible, visual results. I spent this phase building numerous hands-on exercises and advancing multiple personal projects.",
-    technologies: ["Tailwind CSS", "ReduxToolkit", "Framer Motion"],
-    current: true,
-  },
-  {
-    timeLine: "2023 - 2024",
-    title: "Front-End Student",
-    company: "Self Employed",
-    description:
-      "Focused heavily on mastering the fundamentals through official documentation and high-quality reference platforms. My primary resources included W3Schools.com for core web technologies and Nextjs.org for modern React frameworks.",
-    technologies: ["HTML", "CSS", "JavaScript", "React.JS", "Next.JS"],
-    current: false,
-  },
-];
 
 const AllExperience = () => {
   return (
@@ -32,7 +12,7 @@ const AllExperience = () => {
         initial={{ filter: "blur(10px)", height: 0 }}
         whileInView={{ filter: "blur(0px)", height: "100%" }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay:.5 }}
+        transition={{ duration: 1, delay: 0.5 }}
         className="from-green/80 absolute top-1 left-0 h-full w-0.75 rounded-full bg-linear-to-b md:left-1/2 md:-translate-x-1/2"
       />
 
