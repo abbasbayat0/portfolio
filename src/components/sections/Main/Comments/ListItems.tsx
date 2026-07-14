@@ -24,7 +24,9 @@ const ListItems = ({
         <Quote className="text-white" size={25} />
       </div>
       <div>
-        <p className="text-lg text-white/90 md:text-2xl">" {comment} "</p>
+        <p className="text-lg text-white/80 md:text-xl md:tracking-wide">
+          " {comment} "
+        </p>
       </div>
       <div className="mt-8 flex items-center gap-4">
         <div>

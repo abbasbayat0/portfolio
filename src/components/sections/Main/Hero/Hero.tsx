@@ -9,7 +9,7 @@ const Hero = () => {
         <Texts />
         <Image />
       </section>
-      <section className="mt-20 md:mt-32 lg:mt-20 2xl:mt-96">
+      <section className="mt-20 md:mt-32 lg:mt-20 2xl:mt-44">
         <Technologies />
       </section>
     </article>
