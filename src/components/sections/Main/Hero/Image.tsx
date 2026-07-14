@@ -52,7 +52,7 @@ const Image = () => {
 
       {/* shadow */}
       <div
-        className={`shadow-green/30 absolute max-w-113 rounded-xl shadow-[0px_0px_10px_10px] transition duration-1000 min-[870px]:w-11/12 lg:w-full ${imageLoaded ? "animate-pulse bg-black/0 blur-none" : "animate-none bg-black blur-xs"} ${!imageLoaded && "hidden"}`}
+        className={`shadow-green/30 absolute max-w-113 rounded-xl shadow-[0px_0px_10px_10px] transition duration-1000 min-[870px]:w-11/12 lg:w-full ${imageLoaded ? "animate-pulse bg-black/0 blur-none" : "animate-none bg-black blur-xs"}`}
       >
         <img
           src={import.meta.env.BASE_URL + "abbas bayat.png"}
