@@ -9,13 +9,13 @@ const Image = () => {
     <section className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 lg:-mt-44 lg:-mb-44 lg:max-w-1/2 lg:min-w-1/2 lg:justify-end">
       <div className="relative max-w-113 min-[870px]:w-11/12 lg:w-full">
         <motion.img
-          initial={{ translateX: 20, opacity: 0, scale: 0.95 }}
-          animate={{ translateX: 0, opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 1.2, ease: "backIn" }}
           src={imageUrl}
-          onLoad={() => setImageLoaded(false)}
+          onLoad={() => setImageLoaded(true)}
           alt="abbas bayat true picture"
-          className={`relative rounded-xl border-5 border-[#1a2329]/30`}
+          className={`relative rounded-xl border-5 border-[#1a2329]/30 transition duration-1000 ${imageLoaded ? "blur-none" : "blur-lg"}`}
         />
 
         {/* EXP */}
@@ -50,7 +50,7 @@ const Image = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 1.8, ease: "backIn" }}
+        transition={{ duration: 1, delay: 2, ease: "backIn" }}
         className={`shadow-green/30 absolute max-w-113 rounded-xl shadow-[0px_0px_10px_10px] transition duration-1000 min-[870px]:w-11/12 lg:w-full ${imageLoaded ? "bg-black/0 blur-none" : "bg-black blur-sm"}`}
       >
         <img
