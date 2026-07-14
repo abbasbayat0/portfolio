@@ -1,6 +1,7 @@
 <p align="center">
 
-<img width="1008" height="554" alt="1" src="https://github.com/user-attachments/assets/cdc26337-7747-4dc4-b956-561e2008ebf1" />
+[1.webm](https://github.com/user-attachments/assets/3a5cc2a6-48ec-4f3e-be4c-dd9fee6b1b16)
+<!-- <img width="1008" height="554" alt="1" src="https://github.com/user-attachments/assets/cdc26337-7747-4dc4-b956-561e2008ebf1" /> -->
 
 </p>
 
@@ -143,10 +144,10 @@ Rather than being just another portfolio website, this project reflects how I bu
 # 📊 Lighthouse
 
 <p align="center">
+  
+<img width="960" height="500" alt="photo_2026-07-14_12-50-07" src="https://github.com/user-attachments/assets/4218a32a-3080-45d6-b3a7-5a671b2652c5" />
 
-<img width="960" height="385" alt="3" src="https://github.com/user-attachments/assets/aa93d872-f89c-41b3-a2c1-7621fb2bdc53" />
-
-<img width="960" height="385" alt="4" src="https://github.com/user-attachments/assets/4dc0ee1e-42fd-4a7a-8277-0b0e5d6fc94e" />
+<img width="960" height="500" alt="photo_2026-07-14_12-50-03" src="https://github.com/user-attachments/assets/7e9198a0-0d21-4e98-b17e-5098d8516809" />
 
 </p>
 
