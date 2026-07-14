@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
+import { useState } from "react";
 
 const Image = () => {
   const imageUrl = "abbas bayat.png";
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <section className="relative mt-20 flex items-center justify-center min-[900px]:-mb-20 lg:-mt-44 lg:-mb-44 lg:max-w-1/2 lg:min-w-1/2 lg:justify-end">
@@ -11,6 +13,7 @@ const Image = () => {
           animate={{ translateX: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 1.2, ease: "backIn" }}
           src={imageUrl}
+          onLoad={() => setImageLoaded(true)}
           alt="abbas bayat true picture"
           className={`relative rounded-xl border-5 border-[#1a2329]/30`}
         />
@@ -48,7 +51,7 @@ const Image = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1.8, ease: "backIn" }}
-        className="shadow-green/30 absolute max-w-113 animate-pulse rounded-xl shadow-[0px_0px_10px_10px] transition-opacity duration-1000 min-[870px]:w-11/12 lg:w-full"
+        className={`shadow-green/30 absolute max-w-113 rounded-xl shadow-[0px_0px_10px_10px] transition-opacity duration-1000 min-[870px]:w-11/12 lg:w-full ${imageLoaded ? "bg-transparent blur-none" : "bg-black/90 blur-sm"}`}
       >
         <img
           src={import.meta.env.BASE_URL + "abbas bayat.png"}
