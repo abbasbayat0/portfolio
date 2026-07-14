@@ -5,11 +5,11 @@ import { listOfTech } from "../../../../assets/data";
 const Technologies = () => {
   return (
     <motion.section
-      initial={{ filter: "blur(10px)" }}
+      initial={{ translateY: 50, opacity: 0, filter: "blur(2px)" }}
+      whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
       viewport={{ once: true }}
-      whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 1 }}
-      className="flex w-full flex-col justify-center overflow-x-hidden"
+      className="relative flex w-full flex-col justify-center overflow-x-hidden"
     >
       <div>
         <p className="text-center text-sm text-white/50">
@@ -29,15 +29,21 @@ const Technologies = () => {
         })}
       </div>
       {/* fade animations */}
-      <div className="absolute right-0 mb-4 h-8 w-44 bg-linear-to-r from-transparent to-[#0f1418]" />
-      <div className="absolute left-0 mb-4 h-8 w-44 bg-linear-to-r from-[#0F1418] to-transparent"></div>
-      {/* scroll */}
-      <div className="mt-5 flex w-full flex-col items-center justify-center">
+      <div className="absolute top-10 right-0 h-8 w-10 bg-linear-to-r from-transparent to-[#0f1418] md:w-20 lg:w-32" />
+      <div className="absolute top-10 left-0 h-8 w-10 bg-linear-to-r from-[#0f1418] to-transparent md:w-20 lg:w-32" />
+      {/* scroll sign */}
+      <motion.div
+        initial={{ opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ opacity: 1, filter: "none" }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="mt-5 flex w-full flex-col items-center justify-center"
+      >
         <p className="text-center text-sm tracking-wider text-white/50 md:text-xs">
           SCROLL
         </p>
         <ChevronDown className="mt-1 animate-bounce text-white/50" />
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

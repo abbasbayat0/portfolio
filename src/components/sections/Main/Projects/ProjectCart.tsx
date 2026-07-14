@@ -9,10 +9,14 @@ const ProjectCart = () => {
         const { title, image, description, tags, liveLink, repoLink } = project;
         return (
           <motion.div
-            initial={{ opacity: 0, translateY: 100 }}
-            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+            whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5, delay: 0.5 * index }}
+            transition={{
+              duration: 1,
+              delay: 0.2 * index + 0.2,
+              ease: "backIn",
+            }}
             key={index}
             className="group flex w-full flex-col overflow-hidden rounded-2xl border border-gray-800 bg-[#141C21] pb-5 md:w-[48%]"
           >

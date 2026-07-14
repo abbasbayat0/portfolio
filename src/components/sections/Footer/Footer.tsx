@@ -12,19 +12,19 @@ const Footer = () => {
         className="h-0.5 w-full bg-gray-800/60"
       />
       <motion.article
-        initial={{ filter: "blur(10px)" }}
-        whileInView={{ filter: "blur(0px)" }}
+        initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1, ease: "backIn" }}
         className="mt-5 flex items-center gap-3"
       >
         <SocialIcons />
       </motion.article>
       <motion.article
-        initial={{ filter: "blur(10px)" }}
-        whileInView={{ filter: "blur(0px)" }}
+        initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1, ease: "backIn" }}
       >
         <p className="text-sm tracking-wide text-white/50">
           © 2026 <span className="text-green">ABBAS BAYAT</span>. All rights

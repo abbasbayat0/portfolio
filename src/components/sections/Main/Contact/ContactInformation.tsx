@@ -5,10 +5,10 @@ const ContactInformation = () => {
   return (
     <div>
       <motion.div
-        initial={{ opacity: 0, translateY: 100 }}
-        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1, delay: 0.5, ease: "backIn" }}
         className="flex w-full flex-col gap-8 rounded-3xl border border-gray-700/20 bg-[#151C21] px-5 py-8 sm:px-8 sm:py-10"
       >
         <p className="text-lg font-bold tracking-wide text-white sm:text-xl">
@@ -36,10 +36,10 @@ const ContactInformation = () => {
 
       {/* currently available */}
       <motion.div
-        initial={{ opacity: 0, translateY: 100 }}
-        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 0.25 }}
+        transition={{ duration: 1, delay: 0.5, ease: "backIn" }}
         className="border-green/40 mt-5 w-full rounded-3xl border bg-[#151E23] px-5 py-8 sm:mt-8"
       >
         <div className="flex items-center gap-3">

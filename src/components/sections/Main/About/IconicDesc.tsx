@@ -8,10 +8,10 @@ const IconicDesc = () => {
         const { icon, title, description } = item;
         return (
           <motion.div
-            initial={{ opacity: 0, translateY: 100 }}
-            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ translateX: 20, opacity: 0, filter: "blur(2px)" }}
+            whileInView={{ translateX: 0, opacity: 1, filter: "none" }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5, delay: 0.5 * index }}
+            transition={{ duration: 1, delay: 0.2 * index+.2, ease: "backIn" }}
             className="h-52 w-11/12 rounded-xl border border-gray-800 bg-[#141C21] px-5 py-6 min-[500px]:w-8/12 sm:w-[45%] md:w-[45%]"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#163A3C]/40 transition duration-300 hover:bg-[#163a3c]/70">

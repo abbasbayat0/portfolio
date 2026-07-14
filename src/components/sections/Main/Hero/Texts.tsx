@@ -5,22 +5,27 @@ import { motion } from "motion/react";
 
 const Texts = () => {
   return (
-    <motion.section
-      initial={{ filter: "blur(10px)", opacity: 0 }}
-      animate={{ filter: "none", opacity: 1 }}
-      transition={{ duration: 1.5, delay: 1 }}
-      className="lg:max-w-1/2 lg:min-w-1/2"
-    >
+    <section>
       {/* badge of frontend */}
-      <div className="relative mt-5 -ml-2 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px] lg:ml-0">
+      <motion.div
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        animate={{ translateX: 0, opacity: 1, filter: "none" }}
+        transition={{ duration: 1, delay: 1.2, ease: "backIn" }}
+        className="relative mt-5 -ml-2 inline-block rounded-full border border-gray-600/30 bg-gray-600/20 px-4 py-2 backdrop-blur-[2px] lg:ml-0"
+      >
         <div className="absolute top-3.5 left-3 h-2 w-2 animate-pulse rounded-full bg-[#1FABA0]"></div>
         <p className="ml-3 text-sm text-[#1faba0]">
           Front-End Developer . Next.JS Specialist
         </p>
-      </div>
+      </motion.div>
 
       {/* main text */}
-      <div className="mt-8 p-2 lg:p-0">
+      <motion.div
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        animate={{ translateX: 0, opacity: 1, filter: "none" }}
+        transition={{ duration: 1, delay: 1.5, ease: "backIn" }}
+        className="mt-8 p-2 lg:p-0"
+      >
         <p className="-ml-5 text-5xl leading-14 font-bold text-white lg:ml-0 lg:text-7xl lg:leading-20">
           Clean{" "}
           <span className="text-green text-shadow-green text-shadow-lg/50">
@@ -29,31 +34,44 @@ const Texts = () => {
           <br /> From Beautiful <br />
           <span className="georgia italic">Design.</span>
         </p>
-      </div>
+      </motion.div>
 
       {/* description */}
-      <div className="mt-5 lg:mt-8 lg:w-9/12">
+      <motion.div
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        animate={{ translateX: 0, opacity: 1, filter: "none" }}
+        transition={{ duration: 1, delay: 1.8, ease: "backIn" }}
+        className="mt-5 lg:mt-8 lg:w-9/12"
+      >
         <p className="font-sans text-lg font-medium text-[#7a8491]">
           Hi, I'm Abbas Bayat - a front-end developer specializing in Next.JS,
           React.JS, and TypeScript. I build scalable, performant web
           applications that users love.
         </p>
-      </div>
+      </motion.div>
 
       {/* buttons */}
       <div className="mt-8 -ml-1 flex flex-col gap-4 min-[500px]:flex-row lg:gap-2">
         {/* contact */}
-        <a href="#contact">
+        <motion.a
+          initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+          animate={{ translateX: 0, opacity: 1, filter: "none" }}
+          transition={{ duration: 1, delay: 2.1, ease: "backIn" }}
+          href="#contact"
+        >
           <Button className="flex w-50 items-center justify-center py-3 text-lg text-white transition duration-300 hover:text-white min-[850px]:w-40 lg:w-auto lg:px-6 lg:py-4 lg:text-base lg:text-[14px] lg:font-medium lg:tracking-wide">
             <div className="flex gap-2">
               <p className="text-shadow-sm text-shadow-white/20">Contact Me </p>
               <ArrowRight className="mt-0.5 lg:-mt-0.5" />
             </div>
           </Button>
-        </a>
+        </motion.a>
 
         {/* CV */}
-        <a
+        <motion.a
+          initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+          animate={{ translateX: 0, opacity: 1, filter: "none" }}
+          transition={{ duration: 1, delay: 2.4, ease: "backIn" }}
           href={import.meta.env.BASE_URL + "ABBAS.pdf"}
           className="flex gap-2"
           download
@@ -62,11 +80,16 @@ const Texts = () => {
             <p>Download CV </p>
             <ArrowDownToLine className="group-hover:animate-bounce lg:-mt-0.5" />
           </Button>
-        </a>
+        </motion.a>
       </div>
 
       {/* social links */}
-      <div className="mt-8 flex items-center gap-3">
+      <motion.div
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        animate={{ translateX: 0, opacity: 1, filter: "none" }}
+        transition={{ duration: 1, delay: 2.7, ease: "backIn" }}
+        className="mt-8 flex items-center gap-3"
+      >
         <div>
           <p className="text-sm font-extralight tracking-wide text-white/50">
             Follow Me :
@@ -75,8 +98,8 @@ const Texts = () => {
         <div className="flex gap-2">
           <SocialIcons />
         </div>
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 };
 

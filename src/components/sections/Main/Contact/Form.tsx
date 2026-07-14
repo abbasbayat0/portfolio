@@ -7,10 +7,10 @@ const Form = () => {
     useSubmitForm();
   return (
     <motion.div
-      initial={{ opacity: 0, translateY: 100 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
+      initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+      whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: "backIn" }}
       className="border-green/40 w-full rounded-3xl border bg-[#151E23] px-5 py-8 lg:px-10 lg:py-12"
     >
       <form

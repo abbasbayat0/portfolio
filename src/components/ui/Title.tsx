@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { motion } from "motion/react";
 
 const Title = ({
   children,
@@ -13,11 +12,7 @@ const Title = ({
   left?: boolean;
 }) => {
   return (
-    <motion.section
-      initial={{ opacity: 0, translateY: 100 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1}}
+    <section
       className={`flex flex-col ${left ? "items-start" : "items-center"}`}
     >
       <p className="text-green text-xs uppercase md:text-sm">{title}</p>
@@ -33,7 +28,7 @@ const Title = ({
           {description}
         </p>
       )}
-    </motion.section>
+    </section>
   );
 };
 

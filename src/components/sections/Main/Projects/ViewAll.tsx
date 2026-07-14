@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 const ViewAll = () => {
   return (
     <motion.section
-      initial={{ filter:"blur(10px)" }}
-      whileInView={{ filter:"blur(0px)" }}
+      initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
+      whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: "backIn" }}
     >
       <a
         href="https://github.com/abbasbayat0/"

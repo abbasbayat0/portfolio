@@ -4,19 +4,26 @@ import { motion } from "motion/react";
 const Texts = () => {
   return (
     <div className="sm:w-11/12 lg:w-1/2">
-      <Title title="about me" left>
-        <p className="text-green font-bold">
-          Building the future,{" "}
-          <span className="georgia leading-16 text-white italic">
-            one component at a time.
-          </span>
-        </p>
-      </Title>
       <motion.div
-        initial={{ opacity: 0, translateY: 100 }}
-        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateX: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, ease: "backIn" }}
+      >
+        <Title title="about me" left>
+          <p className="text-green font-bold">
+            Building the future,{" "}
+            <span className="georgia leading-16 text-white italic">
+              one component at a time.
+            </span>
+          </p>
+        </Title>
+      </motion.div>
+      <motion.div
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateX: 0, opacity: 1, filter: "none" }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "backIn" }}
         className="mt-8"
       >
         <p className="text-sm font-light tracking-wide text-white/50 md:text-base">
@@ -38,10 +45,10 @@ const Texts = () => {
         </p>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, translateY: 100 }}
-        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ translateX: -20, opacity: 0, filter: "blur(2px)" }}
+        whileInView={{ translateX: 0, opacity: 1, filter: "none" }}
         viewport={{ once: true }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, ease: "backIn" }}
         className="shadow-green/10 mt-8 rounded-3xl bg-[#141C21]/60 p-7 shadow-[0px_0px_10px_10px] backdrop-blur-lg"
       >
         <p className="text-md font-semibold text-white/80 italic lg:text-lg">
