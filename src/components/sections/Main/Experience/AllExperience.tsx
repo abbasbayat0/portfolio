@@ -27,7 +27,7 @@ const AllExperience = () => {
             initial={{ opacity: 0, translateY: 100 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.2 * index + 1.5 }}
+            transition={{ duration: 1, delay: 1.5 }}
             key={index}
             className={`border-green/40 static flex w-10/12 flex-col rounded-2xl border bg-[#141C21] p-5 md:w-[40%] ${position}`}
           >

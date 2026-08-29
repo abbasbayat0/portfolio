@@ -1,5 +1,4 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion } from "motion/react";
 
 const ListNavigation = ({
   comments,
@@ -16,13 +15,7 @@ const ListNavigation = ({
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   return (
-    <motion.div
-      initial={{ translateY: 20, opacity: 0, filter: "blur(2px)" }}
-      whileInView={{ translateY: 0, opacity: 1, filter: "none" }}
-      viewport={{ once: true }}
-      transition={{ duration: 1, ease: "backIn" }}
-      className="flex items-center justify-center gap-5"
-    >
+    <div className="flex items-center justify-center gap-5">
       {/* chevron */}
       <div
         className="hover:bg-green/30 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[#152024] transition duration-300"
@@ -61,7 +54,7 @@ const ListNavigation = ({
       >
         <ChevronRight className="text-white" size={25} />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
